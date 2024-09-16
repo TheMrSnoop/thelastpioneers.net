@@ -40,9 +40,10 @@ ol {
     top: 0;
   }
   
-li {
-    float: left;
-  }
+
+p {
+  float: none;
+}
   
 li a {
     display: block;
