@@ -37,6 +37,8 @@ ol {
     padding: 0;
     overflow: hidden;
     background-color: linear-gradient(black, rgb(0, 71, 14));
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
     top: 0;
   }
   
