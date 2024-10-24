@@ -63,6 +63,11 @@ li a:hover {
 .active {
     background-color: linear-gradient(black, rgb(0, 71, 14));
   }
+
+.selected
+{
+  font-weight: bold;
+}
   
 h2 {
     padding-left: 30%;

@@ -14,6 +14,84 @@
 }
 
 
+@keyframes FadeLogo {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+.Logo {
+  animation-name: FadeLogo;
+  animation-duration: 5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@keyframes FadeImage {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.FadeImage {
+  animation-name: FadeImage;
+  animation-duration: 5s;
+}
+
+
+
+.fadein {
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  position: relative;
+}
+
+.fadein img {
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 28s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes fade {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+#f1 {
+  background-color: lightblue;
+  
+
+}
+#f2 {
+  animation-delay: -16s;
+}
+
+#f3 {
+  animation-delay: -8s;
+}
+
+#f4 {
+  animation-delay: -4s;
+}
+
+
+
+
 
 .center {
     display: block;
@@ -64,29 +142,80 @@ ul {
     position: sticky;
     top: 0;
     z-index: 3;
+    background-image: linear-gradient(rgb(0, 23, 5), rgb(0, 28, 6));
+    width: 100%;
   }
   
 li {
     float: left;
+    font-size: 20px;
+    font-family: PixeloidSans;
+    padding-left: 0%;
+    padding-right: 0%;
   }
   
+
+
+
 li a {
     display: block;
-    color: white;
+    color: lime;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
+
 li a:hover {
-    background-color: #111;
+    text-decoration: underline;
   }
 
-.active {
-    background-color: linear-gradient(black, rgb(0, 71, 14));
-  }
 
+.selected
+{
+  font-weight: bold;
+}
+
+
+table
+{
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  background-color: black;
+}
+
+th
+{
+  font-size: 48px;
+  padding-top: 5%;
+  text-align: center;
+}
+
+td
+{
+  padding-right: 2%;
+  text-align: center;
+}
+
+.titleText {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  border-top: 8px solid lime;
+  margin: 0;
+  padding: 0;
+}
 
 .wrap {
   width: 100%;
@@ -96,52 +225,52 @@ li a:hover {
 }
 
 .blured-image {
-  /* The image used */
+
   background-image: url(Images/americanflag.png);
 
-  /* Add the blur effect */
+
   filter: blur(8px);
   -webkit-filter: blur(8px);
 
-  /* Full height */
+
   height: 100%;
 
-  /* Center and scale the image nicely */
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
-/* Bottom left text */
+
 .bottom-left {
   position: absolute;
   bottom: 8px;
   left: 16px;
 }
 
-/* Top left text */
+
 .top-left {
   position: absolute;
   top: 8px;
   left: 16px;
 }
 
-/* Top right text */
+
 .top-right {
   position: absolute;
   top: 8px;
   right: 16px;
 }
 
-/* Bottom right text */
+
 .bottom-right {
   position: absolute;
   bottom: 8px;
   right: 16px;
 }
 
-/* Centered text */
+
 .centered {
   position: absolute;
   top: 50%;
