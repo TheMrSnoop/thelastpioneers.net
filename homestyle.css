@@ -124,7 +124,7 @@ h2 {
 }
 
 h5 {
-    padding-left: 30%;
+    padding-left: 10%;
     padding-right: 30%;
 }
 
@@ -142,11 +142,11 @@ ul {
     position: sticky;
     top: 0;
     z-index: 3;
-    background-image: linear-gradient(rgb(0, 23, 5), rgb(0, 28, 6));
+    background-color: black;
     width: 100%;
   }
   
-li {
+ul li {
     float: left;
     font-size: 20px;
     font-family: PixeloidSans;
@@ -159,7 +159,7 @@ li {
 
 li a {
     display: block;
-    color: lime;
+    color: #659A65;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
@@ -212,7 +212,7 @@ hr {
   display: block;
   height: 5px;
   border: 0;
-  border-top: 8px solid lime;
+  border-top: 8px solid #659A65;
   margin: 0;
   padding: 0;
 }
@@ -276,6 +276,54 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #DEE8E7;
+}
+
+#buildText
+{
+  padding-left: 25%;
+}
+
+#aboutMeText
+{
+  padding: 5%; 
+  display: inline; 
+  text-align: left;
+}
+
+#rcorners1 {
+  width: 25%;
+  height: 25%;
+  border: 4px solid #DEE8E7;
+  border-radius:10%;
+  overflow:hidden;
+  margin: 3% 10% 3% 10%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+.devlogList
+{
+  list-style-type: square;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+
+.devlogList li
+{
+  font-family: PixeloidSans;
+}
+
+.devlogList img
+{
+  width: 100%;
+  padding-top: 5%;
 }
 
 

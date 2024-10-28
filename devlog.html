@@ -3,104 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Images/TLPRetroLogoWebsite.png" type="image/x-icon">
     <title>Devlog</title>
+    <link rel="stylesheet" href="homestyle.css">
 </head>
-<body style="background-image: linear-gradient(black, rgb(0, 71, 14)); color: lime; font-family: PixeloidSans; ">
-    <ol style="z-index: 3;">
-        <li style="float: left;"><h1><a href="index.html">Home</a></h1></li>
-        <li style="float: left;"><h1><a href="devlog.html">Devlog</a></h1></li>
-        <li style="float: left;"><h1><a href="builds.html">Builds</a></h1></li>
-        <li style="float:right"><h1><a class="active" href="https://discord.gg/2Z7n9e6dh8">Discord Server</a></h1></li>
-    </ol>
-    <br>
-    
-    <h1 style="text-align: center; font-family: PixeloidSansBold;">DEVLOG</h1>
-    <p style="text-align: center;">Here I summarize all the key achivements for a specific month of development.</p>
-    <br>
-    <br>
-
-    <h2>April 2024</h2>
-    <img src="Images/europaorbit.png" alt="" width="25%" style="float: right; margin-top: 10%; margin-right: 3%; opacity: 0.5;">
+<body style="color: #659A65; font-family: PixeloidSansBold; background-image: url(Images/HighresScreenshot00010.png); background-size: 100%; background-attachment: fixed;">
     <ul>
-        <li><p>Created a minigame task and a framework for future ones</p></li>
-        <li><p>Created the general idea for the game</p></li>
-        <li><p>Refined the in-game menus</p></li>
-        <img src="Images/HighresScreenshot00004.png" alt="" width="90%">
+        <li class="selected"><p><a href="index.html">HOME</a></p></li>
+        <li><p><a href="devlog.html">DEVLOG</a></p></li>
+        <li><p><a href="builds.html">BUILDS</a></p></li>
+        <li><p><a href="https://discord.gg/2Z7n9e6dh8">DISCORD</a></p></li>
+        <img src="Images/TLPNameTransback.png" alt="" width="10%" style="float: right; padding-top: 8px;" >
     </ul>
-
-    <h2>May 2024</h2>
-    <img src="Images/HighresScreenshot00001.png" alt="" width="25%" style="float: left; margin-top: 10%; margin-left: 3%; opacity: 0.5;">
-    <ul>
-        <li><p>Refined the moon base map</p></li>
-        <li><p>Added the framework for FPS gameplay</p></li>
-        <li><p>Made a custom VHS sytled shader for the game.</p></li>
-        <li><p>Refined the in-game menus</p></li>
-        <img src="Images/americanflag.png" alt="" width="90%"> 
-    </ul>
-
-    <h2>June 2024</h2>
-    <img src="Images/HighresScreenshot00013.png" alt="" width="25%" style="float: right; margin-top: 10%; margin-right: 3%; opacity: 0.5;">
-    <ul>
-        <li><p>Added a launch sequnce intro mission, which is likely to be unused as of writing this.</p></li>
-        <li><p>Made the first FPS animations</p></li>
-        <li><p>Refined the in-game menus</p></li>
-        <img src="Images/freebird.png" alt="" width="90%">
-    </ul>
-
-    <h2>July 2024</h2>
-    <img src="Images/HighresScreenshot00023.png" alt="" width="25%" style="float: left; margin-top: 10%; margin-left: 3%; opacity: 0.5;">
-    <ul>
-        <li><p>Tied weapon attributes such as weapon spread, accuracy, and range to the players current combat level. This includes a leveling system with diffrent sublevels.</p></li>
-        <li><p>Added a relatively in-depth space combat system for the "Interception" core gamemode.</p></li>
-        <li><p>Created a basic inventory and armor mechanic.</p></li>
-        <li><p>Heavily refined the Houston Launchsite Map, that is now likely to be unused as of writing this.</p></li>
-        <li><p>Added a variety of special weapons, like grenades and throwing knives.</p></li>
-        <li><p>Created a few cutscenes and lore tapes.</p></li>
-        <li><p>Refined the in-game menus</p></li>
-        <img src="Images/houstonSequence.png" alt="" width="90%">
-    </ul>
-
-    <h2>August 2024</h2>
-    <img src="Images/MartianOutskirts.png" alt="" width="25%" style="float: right; margin-top: 10%; margin-right: 3%; opacity: 0.5;">
-    <ul>
-        <li><p>Added basic ground troop soldier AI features such as patrolling and shooting</p></li>
-        <li><p>Created a dynamic armor system where the player has a plate of armor per body region. If any damage is taken in that area after the plate breaks, damage will be applied to their actual health. Amount of damage is also applied according to the body segment damaged.</p></li>
-        <li><p>Added the framework for 3 player classes. (Assassin, Commando, Cybersoldier). Framework as in modified attributes and stats. </p></li>
-        <li><p>Added a TON of detail to the GDD, which has reached a peak of over 4,000 words. Actual story and lore are now beginning to take shape, as well as a much larger scope for the game.</p></li>
-        <li><p>Refined the in game-menus</p></li>
-        <video width="90%" autoplay muted loop> 
-            <source src="Videos/StarmapShowcase.mp4" type="video/mp4">
-        </video>
-        
-    </ul>
-
-    <h2>September 2024</h2>
-    <img src="Images/MarsMine01.png" alt="" width="25%" style="float: left; margin-top: 10%; margin-left: 3%; opacity: 0.5;">
-    <ul>
-        <li><p>Made this website (instead of working on the game ik)</p></li>
-        <li><p>Added a fully functioning save/load system, along with the ability to create different save slots.</p></li>
-        <li><p>Added 3 Cybersoldier Hacks. This is a specical mechanic unique to the Cybersoldier class.</p></li>
-        <li><p>Added 2 new types of enemy spacecraft, along with adding 4 types of Starship upgrades that consists of new mechanics and weapons, along with a solid progression system.</p></li>
-        <li><p>Started work on a new map that will be designed specifically for the new scope of the game. It's located on the frozen polar ice caps of Mars, where a Soviet labratory is suspected of doing experiments on frozen alien lifeforms. Most of the map will be designed using modular parts.  </p></li>
-        <li><p>Continued to polish the FPS gameplay</p></li>
-        <li><p>Refined the in game-menus</p></li>
-        <img src="Images/Airlock.png" alt="" width="90%">
-    </ul>
-    <br>
-
-
-    <h2>October 2024</h2>
-    <ul>
-        <li><p>Added a cool warping sequence that teleports you to the target planet or moon. </p></li>
-        <li><p>Added realistic atmospheres to the appropriate planetary bodies</p></li>
-        <video width="90%" autoplay muted loop> 
-            <source src="Videos/OrbitShowcase - Trim.mp4" type="video/mp4">
-        </video>
-    </ul>
-
-    <h2><a href="#Top" style="color: green;">Return back to the top</a></h2>
-    
+    <main style="background-color: black; width: 90%;" class="center" >
+        <section>
+            <br>
+            <h1 style="text-align: center; ">DEVLOG</h1>
+            <p style="text-align: center; font-family: PixeloidSans;">Here I summarize all the key achivements for a specific month of development.
+        </section>
+        <hr>
+        <section>
+            <h1 id="buildText">APRIL 2024</h1>
+            <ol class="devlogList">
+                <li>Created a minigame task and a framework for future ones</li>
+                <li>Created the general idea for the game</li>
+                <li>Refined the in-game menus</li>
+                <img src="Images/HighresScreenshot00004.png" alt="">
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h1 id="buildText">MAY 2024</h1>
+            <ol class="devlogList">
+                <li>Refined the moon base map</li>
+                <li>Added the framework for FPS gameplay</li>
+                <li>Made a custom VHS sytled shader for the game.</li>
+                <li>Refined the in-game menus</li>
+                <img src="Images/americanflag.png" alt="" > 
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h1 id="buildText">JUNE 2024</h1>
+            <ol class="devlogList">
+                <li>Added a launch sequnce intro mission, which is likely to be unused as of writing this.</li>
+                <li>Made the first FPS animations</li>
+                <li>Refined the in-game menus</li>
+                <img src="Images/freebird.png" alt="" > 
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h1 id="buildText">JULY 2024</h1>
+            <ol class="devlogList">
+                <li>Tied weapon attributes such as weapon spread, accuracy, and range to the players current combat level. This includes a leveling system with diffrent sublevels.</li>
+                <li>Added a relatively in-depth space combat system for the "Interception" core gamemode.</li>
+                <li>Created a basic inventory and armor mechanic.</li>
+                <li>Heavily refined the Houston Launchsite Map, that is now likely to be unused as of writing this.</li>
+                <li>Added a variety of special weapons, like grenades and throwing knives.</li>
+                <li>Created a few cutscenes and lore tapes.</li>
+                <li>Refined the in-game menus</li>
+                <img src="Images/houstonSequence.png" alt="">
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h1 id="buildText">AUGUST 2024</h1>
+            <ol class="devlogList">
+                <li>Added basic ground troop soldier AI features such as patrolling and shooting</li>
+                <li>Created a dynamic armor system where the player has a plate of armor per body region. If any damage is taken in that area after the plate breaks, damage will be applied to their actual health. Amount of damage is also applied according to the body segment damaged.</li>
+                <li>Added the framework for 3 player classes. (Assassin, Commando, Cybersoldier). Framework as in modified attributes and stats. </li>
+                <li>Added a TON of detail to the GDD, which has reached a peak of over 4,000 words. Actual story and lore are now beginning to take shape, as well as a much larger scope for the game.</li>
+                <li>Refined the in game-menus</li>
+                <video width="100%" autoplay muted loop style="padding-top: 5%;"> 
+                    <source src="Videos/StarmapShowcase.mp4" type="video/mp4">
+                </video>
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h1 id="buildText">SEPTEMBER 2024</h1>
+            <ol class="devlogList">
+                <li>Made this website (instead of working on the game ik)</li>
+                <li>Added a fully functioning save/load system, along with the ability to create different save slots.</li>
+                <li>Added 3 Cybersoldier Hacks. This is a specical mechanic unique to the Cybersoldier class.</li>
+                <li>Added 2 new types of enemy spacecraft, along with adding 4 types of Starship upgrades that consists of new mechanics and weapons, along with a solid progression system.</li>
+                <li>Started work on a new map that will be designed specifically for the new scope of the game. It's located on the frozen polar ice caps of Mars, where a Soviet labratory is suspected of doing experiments on frozen alien lifeforms. Most of the map will be designed using modular parts.  </li>
+                <li>Continued to polish the FPS gameplay</li>
+                <li>Refined the in game-menus</li>
+                <img src="Images/Airlock.png" alt="">
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h1 id="buildText">OCTOBER 2024</h1>
+            <ol class="devlogList">
+                <li>Added a cool warping sequence that teleports you to the target planet or moon. </li>
+                <li>Added a 3D interactive landing menu</li>
+                <li>Added realistic atmospheres to the appropriate planetary bodies</li>
+                <li>Started work on the Basic Training level. Reworked the way missions are handled.</li>
+                <li>Took a bit of a break for once.</li>
+                <img src="Images/TrainingRoom.png" alt="">
+            </ol>
+        </section>
+        <hr>
+    </main>
 </body>
 </html>
-<link rel="stylesheet" href="devlogstyle.css">
