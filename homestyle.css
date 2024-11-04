@@ -94,9 +94,7 @@
 
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
     width: 50%;
   }
 
@@ -142,8 +140,9 @@ ul {
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: black;
+    background-color: #1a181d;
     width: 100%;
+    border: 3px solid #659A65;
   }
   
 ul li {
@@ -159,7 +158,7 @@ ul li {
 
 li a {
     display: block;
-    color: #659A65;
+    color: white;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
@@ -284,18 +283,12 @@ hr {
   padding-left: 25%;
 }
 
-#aboutMeText
-{
-  padding: 5%; 
-  display: inline; 
-  text-align: left;
-}
 
 #rcorners1 {
   width: 25%;
   height: 25%;
-  border: 4px solid #DEE8E7;
-  border-radius:10%;
+  border: 8px solid #DEE8E7;
+  border-radius:100%;
   overflow:hidden;
   margin: 3% 10% 3% 10%;
 }
@@ -303,7 +296,7 @@ hr {
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
+
 }
 
 
@@ -326,4 +319,79 @@ html, body {
   padding-top: 5%;
 }
 
+#NMS_notice
+{
+  padding: 0 0 1% 15.25%;
+  margin: 0;
+}
 
+#AboutH1
+{
+  position: absolute;
+  top: 15%;
+  left: 40%; 
+  color: #DEE8E7;
+  font-size: 64px;
+}
+
+#AboutDesc1
+{
+  position: absolute;
+  top: 40%;
+  left: 40%; 
+  color: #DEE8E7;
+  padding-right: 30%;
+}
+
+
+footer
+{
+  background-color: #1a181d;
+}
+
+
+footer h5
+{
+  text-align: center;
+  padding: 1% 0 1% 0;
+  margin: 0;
+  font-family: PixeloidMono;
+  color: #DEE8E7;
+}
+
+.AboutMe
+{
+  background-color: #87564F;
+  color: #DEE8E7;
+  border: 2px solid #DEE8E7;
+}
+
+
+.TitleImage
+{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #DEE8E7;
+  margin-top: 10%;
+}
+
+
+div.scroll-container {
+  background-color: #1a181d;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 100%;
+  border: dotted;
+}
+
+div.scroll-container img {
+  padding: 1%;
+  width: 30%;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+
+}
