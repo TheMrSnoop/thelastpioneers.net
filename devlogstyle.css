@@ -14,67 +14,135 @@
 }
 
 
+@font-face {
+  font-family: "Lexend";
+  src: url(Fonts/Lexend-Regular.ttf);
+}
+
+@font-face {
+  font-family: "LexendThin";
+  src: url(Fonts/Lexend-Thin.ttf);
+}
+
+@font-face {
+  font-family: "LexendBold";
+  src: url(Fonts/Lexend-Bold.ttf);
+}
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+    
+  width: 50%;
+}
 
 div {
     width: 400px;
     word-wrap: break-word;
 }
 
-.highres_ss {
-    width: 75%;
+h2 {
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: linear-gradient(black, rgb(0, 71, 14));
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-  }
-  
+h5 {
+  padding-left: 10%;
+  padding-right: 30%;
+}
 
 p {
-  float: none;
-}
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-  }
-
-.active {
-    background-color: linear-gradient(black, rgb(0, 71, 14));
-  }
-
-.selected
-{
-  font-weight: bold;
-}
-  
-h2 {
-    padding-left: 30%;
-    padding-right: 30%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 ul {
-    padding-left: 30%;
-    padding-right: 30%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+
+}
+
+ul li {
+  float: left;
+  font-size: 20px;
+  font-family: Lexend;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  text-decoration: underline;
+}
+
+
+.selected
+{
+font-weight: bold;
+}
+
+hr {
+  display: block;
+  height: 5px;
+  border: 0;
+  border-top: 8px solid white;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.devlogList
+{
+  list-style-type: square;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+
+.devlogList li
+{
+  font-family: PixeloidSans;
+}
+
+.devlogList img
+{
+  width: 100%;
+  padding-top: 5%;
+}
+
+footer
+{
+  background-color: #1a181d;
+}
+
+
+footer h5
+{
+  text-align: center;
+  padding: 1% 0 1% 0;
+  margin: 0;
+  font-family: LexendThin;
+  color: #DEE8E7;
 }
