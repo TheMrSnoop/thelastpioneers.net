@@ -332,11 +332,6 @@ html, body {
 }
 
 
-footer
-{
-  background-color: #1a181d;
-}
-
 
 footer h5
 {
@@ -406,6 +401,13 @@ div.scroll-container img {
   background-image: linear-gradient(#161616, black)
 }
 
+.Gallery
+{
+  color: white; 
+  font-family: Lexend; 
+  background-image: linear-gradient(#161616, black)
+}
+
 .devlogList
 {
   list-style-type: circle;
@@ -441,7 +443,7 @@ Devlog main section
 h1 a
 {
   color: wheat;
-  target:="_blank";
+  
 }
 
 #buildParagraph
@@ -504,5 +506,42 @@ Index h2
 
 .AboutGame
 {
-  
+  background-image: url(Images/EarthOrbit_1440pBLURED.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  margin: 0;
+  padding: 0;
+}
+
+
+#AboutGameHeading
+{
+  font-family: Lexend;
+  padding: 0 5%;
+  margin: 0;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#AboutGameText
+{
+  font-family: LexendThin;
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+}
+
+
+.KeyFeaturesOL
+{
+  list-style-type: circle;
+  padding-left: 31%;
+  padding-right: 30%;
+}
+
+KeyFeaturesOL li
+{
+  font-family: LexendThin;
+
 }
