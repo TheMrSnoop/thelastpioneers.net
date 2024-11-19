@@ -545,3 +545,32 @@ KeyFeaturesOL li
   font-family: LexendThin;
 
 }
+
+
+.Socials
+{
+  background-image: url(Images/O2TanksBLURED.png);
+  font-family: LexendThin;
+  color: white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#SocialsH1
+{
+  font-size: 64px;
+  text-align: center;
+  padding: 2% 10% 2% 10%;
+}
+
+.SocialsSection
+{
+  margin: 0 30% 0 30%;
+}
+
+#SocialsIcon
+{
+  width: 40%;
+  display: block;
+}
+
