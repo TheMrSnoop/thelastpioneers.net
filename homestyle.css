@@ -128,6 +128,30 @@
   
 }
 
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+
+@keyframes slideLeft
+{
+  from {
+    padding-left: 100%;
+    opacity: 0%;
+  }
+  to 
+  {
+    padding-left: 39%;
+    opacity: 100%;
+  }
+}
+
+
 
 
 
@@ -556,7 +580,7 @@ Index h2
   z-index: 2;
 }
 
-.KeyPoint img
+.KeyPointImage
 {
   width: 60%;
   position: relative;
@@ -596,7 +620,7 @@ Index h2
   text-align: right;
 }
 
-.KeyPointVar2 img
+.KeyPointVar2Image
 {
   width: 60%;
   position: relative;
@@ -606,34 +630,6 @@ Index h2
   padding-bottom: 2.5%;
 }
 
-.KeyFeatures
-{
-  background-color: #0a0a0a;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.KeyFeatures h2
-{
-  text-align: center;
-  font-size: 64px;
-}
-
-.KeyFeatures img
-{
-  width: 40%;
-  padding-left: 5%;
-  padding-bottom: 5%;
-}
-
-.KeyFeatures ol li
-{
-  position: absolute;
-  display: contents;
-  float: right;
-
-}
 
 .AboutGame
 {
@@ -757,6 +753,7 @@ main a
   opacity: 100%;
   text-decoration: none;
 }
+
 
 
 

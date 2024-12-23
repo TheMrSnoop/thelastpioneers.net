@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <link rel="icon" href="Images/SF_Icon_website.png" type="image/x-icon">
     <title>The Last Pioneers</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal({ opacity: 0 });
+    </script>
+    
 
     
 </head>
@@ -32,25 +37,25 @@
     <section class="KeyPoint">
         <h2>THE CONCEPT</h2>
         <p><b>The Last Pioneers</b> is a narrative driven singleplayer FPS set in an alternate timeline. The game will have tactical elements, along with survival mechanics.  </p>
-        <img src="Images/Game-12-22_01.png" alt="">
+        <img src="Images/Game-12-22_01.png" alt="" class="KeyPointImage">
     </section>
 
     <section class="KeyPointVar2">
         <h2>STORY</h2>
         <p>It takes place in the year <b>2035</b>, only a few months after rouge Soviet AI took control of nuclear weapons, destroyed Earth, and <b>killed 90%</b> of the human race. Humanity is now forced to live amongst the stars. You play as a <b>Starsoldier</b> in the United States Space Force, with the ultimate goal of providing security to interplanetary American habitats. Being a soldier, you are given combat objectives that allow you to explore various parts of the solar system.</p>
-        <img src="Images/MartianOutskirts.png" alt="">
+        <img src="Images/MartianOutskirts.png" alt="" class="KeyPointVar2Image" >
     </section>
 
     <section class="KeyPoint">
         <h2>ENVIRONMENTS</h2>
         <p>Every combat mission has its very own map, or landing zones around the solar system. As of right now, I plan to include <b>Earth, The Moon, Mars, Europa, Titan,</b> and maybe <b>Venus</b> as environments to house different maps. Each one of these planets/moons will have 2-3 combat objectives on it, some of them will be on the ground, a few will be in orbit around that planet/moon.</p>
-        <img src="Images/EarthOrbit_1440p.png" alt="">
+        <img src="Images/EarthOrbit_1440p.png" alt="" class="KeyPointImage">
     </section>
 
     <section class="KeyPointVar2">
         <h2>TOOLS</h2>
         <p>I use <b>Unreal Engine</b> 5.5 and Blueprint programming to create the game (No C++ for now).  I use <b>Blender</b> for 3D models and animations, <b>Audacity</b> for sound design, <b>GIMP</b> for graphic design, and <b>Davinci Resolve 19</b> for video editing. </p>
-        <img src="Images/TLP_Tools.png" alt="">
+        <img src="Images/TLP_Tools.png" alt="" class="KeyPointVar2Image">
     </section>
     <section class="CurrentNewsSection">
         <div style="width: 25%; height: 100%; margin: 0 0 0 5%; float: left; border: 3px white solid;">
@@ -93,6 +98,27 @@
             <h5>the last pioneers is a space game created by @themrsnoop | 12.2024</h5>
         </footer>
     </section>    
+    <script>
+        ScrollReveal().reveal('.KeyPointImage',  {
+            distance: '100px',
+            reset: true,
+            delay: 100,
+            viewOffset: {
+                top: 500,
+                bottom: 500
+            }
+        })
+
+        ScrollReveal().reveal('.KeyPointVar2Image',  {
+            distance: '100px',
+            reset: true,
+            delay: 100,
+            viewOffset: {
+                top: 500,
+                bottom: 500
+            }
+        })
+    </script>
 </body>
 </html>
 <link rel="stylesheet" href="homestyle.css">
