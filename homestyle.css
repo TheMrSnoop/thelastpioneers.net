@@ -178,6 +178,13 @@
     border: 1px solid #333333;
   }
   
+
+
+a
+{
+  cursor: url(Images/WebsiteCursorHOVER.png), pointer;
+}
+
 div {
     width: 400px;
     word-wrap: break-word;
@@ -229,6 +236,7 @@ li a {
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
+    
   }
   
 
@@ -347,7 +355,8 @@ hr {
 html, body {
   margin: 0;
   padding: 0;
-
+  cursor: url(Images/WebsiteCursor.png), auto;
+  
 }
 
 
@@ -430,14 +439,14 @@ div.scroll-container img {
 {
   color: white; 
   font-family: LexendThin; 
-  background-image: linear-gradient(#161616, black)
+  background-image: linear-gradient(#040404, black)
 }
 
 .Devlog
 {
   color: white; 
   font-family: Lexend; 
-  background-image: linear-gradient(#161616, black)
+  background-image: linear-gradient(#040404, black)
 }
 
 .Gallery
@@ -712,49 +721,56 @@ KeyFeaturesOL li
 }
 
 
-.AboutMe
+
+
+
+
+
+.Stats
 {
-  color: white;
-  display: inline-block;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  background-color: #040404;
+  border: none;
   margin: 0;
-  width: 100%;
+  padding: 0;
 }
 
-
-main article
+.Stats h2
 {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  padding: 2% 0 2% 0;
-  color: white;
+  font-size: 36px;
+  text-align: center;
 }
 
-
-
-main article h3
+.Stats h4
 {
-  padding: 1% 40% 0 10%;
-  font-size: 32px;
-  font-family: LexendThin;
-}
-
-main article p
-{
-  padding: 0 40% 2% 10%;
+  font-size: 24px;
   font-family: Lexend;
+  color: whitesmoke;
 }
 
-main a
+.Stats img
 {
-  opacity: 100%;
+  width: 30%;
+  padding-left: 5%;
+  position: relative;
+}
+
+.Stats a
+{
+  color: whitesmoke;
+}
+
+.Stats a:hover
+{
   text-decoration: none;
 }
 
-
-
+.Stats div
+{
+  padding-left: 50%;
+  padding-right: 5%;
+  position: absolute;
+  z-index: 2;
+  text-align: left;
+}
 
 
