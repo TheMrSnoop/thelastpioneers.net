@@ -743,8 +743,9 @@ KeyFeaturesOL li
 .Stats h4
 {
   font-size: 24px;
-  font-family: Lexend;
+  font-family: LexendThin;
   color: whitesmoke;
+  text-transform: uppercase;
 }
 
 .Stats img
@@ -772,5 +773,7 @@ KeyFeaturesOL li
   z-index: 2;
   text-align: left;
 }
+
+
 
 

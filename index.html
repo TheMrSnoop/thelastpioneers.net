@@ -35,34 +35,28 @@
     <section class="KeyPoint">
         <h2>THE CONCEPT</h2>
         <p><b>The Last Pioneers</b> is a narrative driven singleplayer FPS set in an alternate timeline. The game will have tactical elements, along with survival mechanics.  </p>
-        <img src="Images/Game-12-22_01.png" alt="" class="KeyPointImage">
+        <img src="Images/AR-15_Crate.png" alt="" class="KeyPointImage">
     </section>
 
     <section class="KeyPointVar2">
         <h2>STORY</h2>
         <p>It takes place in the year <b>2035</b>, only a few months after rouge Soviet AI took control of nuclear weapons, destroyed Earth, and <b>killed 90%</b> of the human race. Humanity is now forced to live amongst the stars. You play as a <b>Starsoldier</b> in the United States Space Force, with the ultimate goal of providing security to interplanetary American habitats. Being a soldier, you are given combat objectives that allow you to explore various parts of the solar system.</p>
-        <img src="Images/MartianOutskirts.png" alt="" class="KeyPointVar2Image" >
+        <img src="Images/OrbitalSatelite_Downsized.png" alt="" class="KeyPointVar2Image" >
     </section>
 
     <section class="KeyPoint">
         <h2>ENVIRONMENTS</h2>
-        <p>Every combat mission has its very own map, or landing zones around the solar system. As of right now, I plan to include <b>Earth, The Moon, Mars, Europa, Titan,</b> and maybe <b>Venus</b> as environments to house different maps. Each one of these planets/moons will have 2-3 combat objectives on it, some of them will be on the ground, a few will be in orbit around that planet/moon.</p>
-        <img src="Images/EarthOrbit_1440p.png" alt="" class="KeyPointImage">
-    </section>
-
-    <section class="KeyPointVar2">
-        <h2>TOOLS</h2>
-        <p>I use <b>Unreal Engine</b> 5.5 and Blueprint programming to create the game (No C++ for now).  I use <b>Blender</b> for 3D models and animations, <b>Audacity</b> for sound design, <b>GIMP</b> for graphic design, and <b>Davinci Resolve 19</b> for video editing. </p>
-        <img src="Images/TLP_Tools.png" alt="" class="KeyPointVar2Image">
+        <p>Every combat mission has its very own map, or landing zones around the solar system. As of right now, I plan to include <b>Earth, The Moon, Mars, Europa,</b> and maybe <b>other alien Exo-Planets</b> (like the one shown on the right), as environments to house different maps. Each one of these planets/moons will have 2-3 combat objectives on it, some of them will be on the ground, a few will be in orbit around that planet/moon.</p>
+        <img src="Images/Humanity's Second Ocean.png" alt="" class="KeyPointImage">
     </section>
     <section class="CurrentNewsSection">
         <div style="width: 25%; height: 100%; margin: 0 0 0 5%; float: left; border: 3px white solid;">
             <h1 style="font-size: 48px; font-family: LexendBold; text-align: center;">CURRENT NEWS</h1>
         </div>
         <div style="width: 50%; float: right; margin-right: 15%;">
-            <h1 style="font-size: 24px;">11.26.24</h1>
+            <h1 style="font-size: 24px;">2.14.24</h1>
             <h1>
-                After about 3 months, this website is finally polished enough to be public! Along with this, is the completion of the 7th build of the game! Read more about it <a href="builds.html #6thBuild">here</a>
+                After over 5 months, this website is finally polished enough to be public! Over this time, I have constantly been updating the information on this website, so if you're interested in what's already been done, check out my <a href="devlog.html">devlog</a> or <a href="builds.html">builds!</a>
             </h1>
             <br>
             <br>
@@ -80,20 +74,45 @@
             <h3>First Person Shooter</h3>
             <h3>Singleplayer Story</h3>
             <h3>Space</h3>
-            <h3>Narrative Driven</h3>
+            <h3>RPG</h3> 
             <br>
             <br>
-            <h4>Release Date</h4>
-            <h3>Unknown</h3>
-            <h3>Steam Page: Currently Unavailable</h3>
+            <h4>Tools</h4>
+            <h3>Game Engine: Unreal Engine 5.5</h3>
+            <h3>3D Modeling Software: Blender</h3>
+            <h3>Graphic Editing Software: GIMP</h3>
+            <h3>Audio Editing Software: Audacity</h3>
         </div>
 
         <div style="padding-left: 70%;">
-            <h4>Developer</h4>
-            <h3>User: TheMrSnoop</h3>
-            <h3>Experience: Roblox Studio, Unity, Unreal Engine</h3>
-            <h3>Skills: Programming, Game Design</h3>
-            <h3>Working on this project for: 9 Months</h3>
+            <h4>RELEASE</h4>
+            <h3>Steam Page: Coming Soon</h3>
+            <h3>Release Date: When it's ready</h3>
+            <h3 id="time-elapsed"></h3>
+            <script>
+                const startTime = new Date("2024-3-2 18:00:00");
+                startTime.setDate(startTime.getDate()); 
+            
+                function updateTimeElapsed() {
+                  const now = new Date();
+                  const elapsedTime = now - startTime;
+                  const days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+                  const hours = Math.floor((elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  const minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+                  const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+
+                  document.getElementById("time-elapsed").textContent =
+                    `${days} Day${days !== 1 ? "s" : ""}, ` +
+                    `${hours} Hour${hours !== 1 ? "s" : ""}, ` +
+                    `${minutes} Minute${minutes !== 1 ? "s" : ""}, ` +
+                    `${seconds} Second${seconds !== 1 ? "s" : ""} in development`;
+                }
+            
+
+                updateTimeElapsed();
+            
+                setInterval(updateTimeElapsed, 1000);
+              </script>
             <br>
             <br>
             <h4>Socials</h4>
@@ -104,14 +123,17 @@
         <img src="Images/RocketWireframe.png" alt="">
 
     </section>
-
+    <br>
+    <br>
     <section>
-        <h1 style="text-align: center;">GAME IS STILL IN EARLY DEVELOPMENT</h1>
-        <p style="text-align: center;">NOTHING IS FINAL.</p>
+        <h1 style="text-align: center;">GAME IS STILL IN EARLY DEVELOPMENT | NOTHING IS FINAL</h1>
         <footer>
-            <h5>the last pioneers is a space game created by @themrsnoop | 12.2024</h5>
+            <h5>1.2025</h5> 
+            <img src="Images/herrow.gif" alt="" class="center" style="width: 2%;" >
         </footer>
     </section>    
+
+
     <script>
         ScrollReveal().reveal('.KeyPointImage',  {
             distance: '100px',
