@@ -15,17 +15,17 @@
 
 @font-face {
   font-family: "Lexend";
-  src: url(Fonts/Lexend-Regular.ttf);
+  src: url(Fonts/Lexend.ttf);
 }
 
 @font-face {
   font-family: "LexendThin";
-  src: url(Fonts/Lexend-Thin.ttf);
+  src: url(Fonts/LexendThin.ttf);
 }
 
 @font-face {
   font-family: "LexendBold";
-  src: url(Fonts/Lexend-Bold.ttf);
+  src: url(Fonts/LexendBold.ttf);
 }
 
 @font-face {
@@ -709,16 +709,85 @@ KeyFeaturesOL li
   display: block;
 }
 
-.CurrentNewsSection
+.NewsWrapper
 {
-  display: inline-block;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin: 0;
   width: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
+
+.NewsWrapperTitle
+{
+  display: flex;
+  text-align: center;
+
+  font-size: 32px;
+  padding: 2.5% 0 0 5%;
+  margin: 0;
+}
+
+.NewsBlock
+{
+  height: 100%;
+  width: 500px;
+  text-align: left;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  margin: 0 2.5% 0 2.5%;
+}
+
+.NewsBlock img
+{
+  width: 100%;
+  transition: width 0.1s ease-out; 
+}
+
+.NewsBlock img:hover
+{
+
+  width: 110%;
+}
+
+
+
+
+
+.NewsBlock h1, h3, p
+{
+  text-align: left;
+  padding: 0 5% 0 5%;
+  margin: 0;
+}
+
+.NewsBlock h1
+{
+  font-size: 24px;
+  font-family: LexendThin;
+  font-weight: 900;
+}
+
+.NewsBlock h3
+{
+  font-family: LexendThin;
+  font-weight: 500;
+}
+
+.NewsBlock p
+{
+  font-size: 12px;
+  font-family: Lexend;
+}
+
+.NewsBlock a
+{
+  color: wheat;
+}
+
+
+
 
 
 
@@ -774,6 +843,16 @@ KeyFeaturesOL li
   text-align: left;
 }
 
+.devclock
+{
 
+}
+
+.devclock h1
+{
+  font-size: 80px;
+  text-align: center;
+  font-family: LexendThin;
+}
 
 

@@ -1,0 +1,132 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@font-face {
+    font-family: "Lexend";
+    src: url(Fonts/Lexend.ttf);
+  }
+  
+  @font-face {
+    font-family: "LexendThin";
+    src: url(Fonts/LexendThin.ttf);
+  }
+  
+  @font-face {
+    font-family: "LexendBold";
+    src: url(Fonts/LexendBold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Anurati";
+    src: url(Fonts/Anurati-Regular.otf);
+  }
+  
+
+
+
+img
+{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+h5, h1, h3, h4
+{
+    padding: 0 0 0 10%;
+    font-family: Lexend;
+}
+
+h5
+{
+    font-family: Lexend;
+    font-size: 14px;
+}
+
+h1
+{
+    font-family: Lexend;
+    font-size: 48px;
+}
+
+
+p
+{
+    font-family: Lexend;
+    text-align: left;
+    padding: 0% 30% 0 30%;
+}
+
+
+h4
+{
+    text-align: center;
+    font-size: 24px;
+    padding: 0 30% 0 30%;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: black;
+
+
+  }
+  
+ul li {
+    float: left;
+    font-size: 20px;
+    font-family: Lexend;
+    padding-left: 0%;
+    padding-right: 0%;
+
+  }
+  
+
+
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    
+  }
+  
+
+li a:hover {
+    animation: ToGrey 0.1s ease-in forwards;
+
+}
+
+
+
+
+
+.selected
+{
+  font-weight: bold;
+}
