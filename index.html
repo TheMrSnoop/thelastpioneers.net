@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <link rel="icon" href="Images/SF_Icon_website.png" type="image/x-icon">
-    <title>The Last Pioneers</title>
+    <title>The Voyager Pact</title>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
         ScrollReveal({ opacity: 0 });
     </script>
-    
+
 
     
 </head>
@@ -18,22 +18,27 @@
      <ul>
         <li class="selected"><p><a href="index.html">About</a></p></li>
         <li><p><a href="devlog.html">Devlog</a></p></li>
-        <img src="Images/SF_Icon_website.png" alt="" width="3%" style="float: right; padding-top: 8px; padding-right: 1%;" >
+        <img src="Images/SF_Icon_website.png" alt="" width="3%" style="float: right; padding-top: 8px; padding-right: 1%; " >
     </ul>
 
     <div class="wrap">
-        <img src="Images/RevolverKit.png" alt="" width="100%">
-        <img src="Images/TLPBanner_new.png" alt="" class="centered" width="50%">
-        <a href="https://store.steampowered.com" target="_blank" ><img src="Images/WishlistButton.png" alt="" class="centered" width="12%" style="padding-top: 40%;"></a>
-        <p class="centered" style="padding: 17% 0% 0% 0%; font-size: 32px; font-family: Lexend;">a space tactical shooter | currently in development</p>
+        <img src="Images/RevolverKit.png" alt="" width="100%" style="mask-image: linear-gradient(black, transparent 80%);">  
+        <img src="Images/SF_Icon_TransWhite.png" alt="" width="10%" style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
+        <h1 class="Game_Heading">THE VOYAGER PACT</h1>
+        <p class="Game_Subheading">a space RPG | currently in development</p>
     </div>
-
+    <a class="fancy" href="#">
+        <span class="top-key"></span>
+        <span class="text">WISHLIST NOW</span>
+        <span class="bottom-key-1"></span>
+        <span class="bottom-key-2"></span>
+    </a>
     
 
 
     <section class="KeyPoint">
         <h2>THE CONCEPT</h2>
-        <p><b>The Last Pioneers</b> is a narrative driven singleplayer FPS set in an alternate timeline. The game will have tactical elements, along with survival mechanics.  </p>
+        <p><b>The Voyager Pact</b> will be a narrative driven singleplayer FPS set in an alternate timeline. This game will have tactical elements, along with survival mechanics.  </p>
         <img src="Images/AR-15_Crate.png" alt="" class="KeyPointImage">
     </section>
 
@@ -44,11 +49,12 @@
     </section>
     <section class="KeyPoint">
         <h2>ENVIRONMENTS</h2>
-        <p>Every combat mission has its very own map, or landing zones around the solar system. As of right now, I plan to include <b>Earth, The Moon, Mars, Europa,</b> and maybe <b>other alien Exo-Planets</b> (like the one shown on the right), as environments to house different maps. Each one of these planets/moons will have 2-3 combat objectives on it, some of them will be on the ground, a few will be in orbit around that planet/moon.</p>
+        <p>Every combat mission has its very own map. I plan to include <b>Earth, The Moon, Mars, Europa,</b> and maybe <b>other alien Exo-Planets</b> (like the one shown on the right), as environments to house different maps. Each one of these planets/moons will have 2-3 combat objectives on it, some of them will be on the ground, a few will be in orbit around that planet/moon.</p>
         <img src="Images/Humanity's Second Ocean.png" alt="" class="KeyPointImage">
     </section>
 
     <section class="devclock">
+        <h3 style="text-align: center;">Time Since Development Started</h3>
         <h1 id="time-elapsed"></h1>
         <script>
             const startTime = new Date("2024-03-02 18:00:00");
@@ -80,46 +86,86 @@
           
     </section>
 
+    
 
 
-    <section class="Stats">
-        <h2>STATISTICS</h2>
-        <div>
+    <div class="Stats">
+        <div id="GenreCard">
             <h4>Genre</h4>
             <h3>First Person Shooter</h3>
             <h3>Singleplayer Story</h3>
             <h3>Space</h3>
             <h3>RPG</h3> 
-            <br>
-            <br>
+        </div>
+        <div>
             <h4>Tools</h4>
-            <h3>Game Engine: Unreal Engine 5.5</h3>
-            <h3>3D Modeling Software: Blender</h3>
-            <h3>Graphic Editing Software: GIMP</h3>
-            <h3>Audio Editing Software: Audacity</h3>
+            <div class="Tool-Entry" style="height: 30px;">
+                <img src="Images/CompanyLogos/ue-logo-cropped.png" alt="">
+                <h3>Unreal Engine 5.5</h3>
+            </div>
+            <div class="Tool-Entry" style="height: 30px;">
+                <img src="Images/Blender_logo_no_text.svg.png" alt="">
+                <h3>Blender</h3>
+            </div>
+            <div class="Tool-Entry" style="height: 30px;">
+                <img src="Images/CompanyLogos/Gimp.png" alt="">
+                <h3>GIMP</h3>
+            </div>
+            <div class="Tool-Entry" style="height: 30px;"> 
+                <img src="Images/CompanyLogos/DavinciResolve.png" alt="">
+                <h3>DaVinci Resolve</h3>
+            </div>
         </div>
-
-        <div style="padding-left: 70%;">
-            <h4>RELEASE</h4>
-            <h3>Steam Page: Coming Soon</h3>
-            <h3>Release Date: When it's ready</h3>
-            <br>
-            <br>
+        <div id="SocialsCard">
             <h4>Socials</h4>
-            <h3><a href="https://x.com/themrsnoop" target="_blank">Twitter/X</a></h3>
-            <h3><a href="https://bsky.app/profile/themrsnoop.bsky.social" target="_blank">Bluesky</a></h3>
-            <h3><a href="https://discord.gg/2Z7n9e6dh8" target="_blank">Discord</a></h3>
+            <a href="https://x.com/themrsnoop"  target="_blank">
+                <button class="socialsBtn">
+                    <span class="IconContainer" id="TwitterLogo">
+                        <img src="Images/CompanyLogos/X_logo.png" alt="">
+                    </span>
+                    <p class="Socials_text" >X</p>
+                </button>
+            </a>
+            <a href="https://bsky.app/profile/themrsnoop.bsky.social"  target="_blank">
+                <button class="socialsBtn">
+                    <span class="IconContainer" id="BSKYLogo">
+                        <img src="Images/CompanyLogos/Bluesky_Logo.png" alt="">
+                    </span>
+                    <p class="Socials_text" >Bluesky</p>
+                </button>
+            </a>
+            <a href="https://discord.gg/vPwvxZrbMM" target="_blank">
+                <button class="socialsBtn">
+                    <span class="IconContainer" id="DiscordLogo">
+                        <img src="Images/CompanyLogos/DiscordLogo.png" alt="">
+                    </span>
+                    <p class="Socials_text" >Discord</p>
+                </button>
+            </a>
         </div>
-        <img src="Images/RocketWireframe.png" alt="">
-
-    </section>
+    </div>
     <br>
     <br>
-    <hr style="border-top: 2px white solid;">
-    <h4 class="NewsWrapperTitle">LATEST NEWS</h4>
+    
+    <h4 class="NewsWrapperTitle">LATEST DEVELOPER NEWS</h4>
     <script>
         //I need to add a new function for each div, just copy and paste an og one
         
+
+        function FirstYear() {
+            let currentUrl = window.location.origin;
+            let redirectFile = "Celebrating1YearofGameDev.html";
+            window.location.href = currentUrl + "/" + redirectFile;
+            
+        }
+
+        function NewIntroMission() {
+            let currentUrl = window.location.origin;
+            let redirectFile = "MakingNewIntroMission.html";
+            window.location.href = currentUrl + "/" + redirectFile;
+            
+        }
+
         function DevHelp() {
             let currentUrl = window.location.origin;
             let redirectFile = "GettingHelpWithDevelopment.html";
@@ -152,10 +198,21 @@
             
         }
     </script>
-    <section class="NewsWrapper">
+    <div class="NewsWrapper">
 
+        <div class="NewsBlock" onclick="FirstYear()">
+            <img src="Images/FirstScreenshot.png" alt="">
+            <h1>Celebrating 1 Year of Game-Dev Progress</h1>
+            <h3>3.3.2025</h3>
+            <p>GAME DEV</p>
+        </div> 
 
-
+        <div class="NewsBlock" onclick="NewIntroMission()">
+            <img src="Images/PolarisBase.png" alt="">
+            <h1>Remaking the Intro mission</h1>
+            <h3>1.28.2025</h3>
+            <p>GAME DEV</p>
+        </div> 
 
         <div class="NewsBlock" onclick="DevHelp()">
             <img src="Images/Watchdog.jpg" alt="">
@@ -164,22 +221,26 @@
             <p>GAME DEV</p>
         </div> 
 
+
+  
+  
+            
+    </div>
+    <div class="NewsWrapper">
+
         <div class="NewsBlock" onclick="Fall2024()">
             <img src="Images/EarthOrbit_1440p.png" alt="">
             <h1>Fall 2024 Developer Update</h1>
             <h3>11.6.2024</h3>
             <p>GAME DEV</p>
         </div>
-  
+
         <div class="NewsBlock" onclick="WebsiteCreation()">
             <img src="Images/HighresScreenshot00013.png" alt="">
             <h1>Starting Development on this website</h1>
             <h3>9.24.2024</h3>
             <p>WEBSITE</p>
-        </div>    
-            
-    </section>
-    <section class="NewsWrapper">
+        </div>  
 
 
         <div class="NewsBlock" onclick="Summer2024()">
@@ -190,14 +251,28 @@
         </div> 
 
 
-    </section>
+    </div>
+ 
+
+
+
+
+
 
     <section>
         <footer>
-            <h5>GAME IS STILL IN EARLY DEVELOPMENT | NOTHING IS FINAL | 1.2025</h5> 
+            <h5 id="FooterText">GAME IS STILL IN EARLY DEVELOPMENT | NOTHING IS FINAL | d.yyyy</h5>
+            <script>
+                const footerText = document.getElementById("FooterText"); 
+                const d = new Date();
+                let currentMonth = d.getMonth() + 1;
+                let currentYear = d.getFullYear();
+    
+                footerText.textContent = "GAME IS STILL IN EARLY DEVELOPMENT | NOTHING IS FINAL | " + currentMonth + "." + currentYear;
+            </script> 
         </footer>
-    </section>    
-
+    </section>
+    
 
     <script>
         ScrollReveal().reveal('.KeyPointImage',  {
@@ -211,13 +286,8 @@
         })
 
         ScrollReveal().reveal('.KeyPointVar2Image',  {
-            distance: '100px',
-            reset: true,
-            delay: 100,
-            viewOffset: {
-                top: 500,
-                bottom: 500
-            }
+             
+            
         })
     </script>
 </body>

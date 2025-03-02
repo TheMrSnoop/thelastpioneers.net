@@ -29,11 +29,14 @@ html, body
 
 
 
+
+
 img
 {
     width: 100%;
     height: 500px;
     object-fit: cover;
+    mask-image: linear-gradient(black 50%, transparent);
 }
 
 h5, h1, h3, h4
@@ -130,3 +133,4 @@ li a:hover {
 {
   font-weight: bold;
 }
+
