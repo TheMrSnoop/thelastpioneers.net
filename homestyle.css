@@ -131,14 +131,10 @@
 @keyframes ToGrey
 {
   from {
-    color: white;
-    font-size: 20px;
     opacity: 100%;
   }
 
   to {
-    color: rgb(240, 230, 212);
-    font-size: 20.75px;
     opacity: 75%;
   }
   
@@ -232,15 +228,20 @@ ul {
     z-index: 3;
     width: 100%;
 
-
   }
   
 ul li {
     float: left;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Lexend;
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: auto;
+    font-family: LexendThin;
+    font-weight: 1000;
+
+
   }
   
 
@@ -250,9 +251,8 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 0px 16px;
+    padding: 0;
     text-decoration: none;
-    
   }
   
 
@@ -263,8 +263,28 @@ li a:hover {
 
 
 
+.NavBarItemUnderline
+{
+  display: block;
+  width: 0%;
+  height: 1px;  
+  background-color: white;
+  transition: width 0.2s ease-in-out;
+  margin-top: 10%;
+}
 
 
+li:hover .NavBarItemUnderline
+{
+  float: left;
+  width: 100%;
+}
+
+li:not(:hover) .NavBarItemUnderline
+{
+  float: right;
+  width: 0%;
+}
 .selected
 {
   font-weight: bold;
@@ -307,8 +327,8 @@ hr {
   display: block;
   height: 3px;
   border: 0;
-  border-top: 5px solid white;
-  margin: 0;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.75);
+  margin: 0 5% 0 5%;
   padding: 0;
 }
 
@@ -500,6 +520,14 @@ div.scroll-container img {
   border: 3px solid white;
 }
 
+.DevVersionHeader
+{
+  text-align: center;
+  font-family: "LexendThin";
+  font-weight: 600;
+  font-size: 14px;
+}
+
 Devlog main section
 {
   border: 8px solid #DEE8E7;
@@ -597,7 +625,7 @@ Index h2
 
 .KeyPoint p
 {
-  font-size: 24px;
+  font-size: 21px;
   padding-left: 5%;
   padding-right: 70%;
   padding-top: 12%;
@@ -637,7 +665,7 @@ Index h2
 
 .KeyPointVar2 p
 {
-  font-size: 24px;
+  font-size: 21px;
   padding-right: 5%;
   padding-left: 70%;
   padding-top: 12%;
@@ -733,6 +761,7 @@ KeyFeaturesOL li
   padding: 0;
   margin: 0;
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center; 
 
@@ -756,19 +785,21 @@ KeyFeaturesOL li
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   margin: 0 2.5% 0 2.5%;
+  transition: transform 0.1s ease-out; 
+  overflow: hidden;
+
 }
 
 .NewsBlock img
 {
   width: 100%;
-  transition: width 0.1s ease-out; 
 }
 
-.NewsBlock img:hover
+.NewsBlock:hover
 {
-
-  width: 110%;
+  transform: scale(1.1, 1.1);
 }
+
 
 
 
@@ -1142,7 +1173,7 @@ KeyFeaturesOL li
    top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
-   font-family: "Rubik Doodle Triangles", serif;
+   font-family: "Nasa-Font", serif;
    font-weight: 100;
    font-size: 100px;
  }

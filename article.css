@@ -39,6 +39,15 @@ img
     mask-image: linear-gradient(black 50%, transparent);
 }
 
+.ArticleImage
+{
+  width: 50%;
+  /* margin:auto doesn't seem to work, so 100% - width(50%) = margin-left + margin-right */
+  margin-left: 25%;
+  margin-right: 25%;
+  mask-image: none;
+}
+
 h5, h1, h3, h4
 {
     padding: 0 0 0 10%;
@@ -100,14 +109,20 @@ ul {
   
 ul li {
     float: left;
-    font-size: 20px;
-    font-family: Lexend;
+    font-size: 18px;
+    font-family: LexendThin;
+    font-weight: 1000;
     padding-left: 0%;
     padding-right: 0%;
 
   }
   
-
+ul li p
+{
+  font-size: 18px;
+  font-family: LexendThin;
+  font-weight: 1000;
+}
 
 
 li a {

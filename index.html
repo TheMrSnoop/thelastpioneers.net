@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <link rel="icon" href="Images/SF_Icon_website.png" type="image/x-icon">
-    <title>The Voyager Pact</title>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script>
-        ScrollReveal({ opacity: 0 });
-    </script>
+    <title>The Last Pioneers</title>
+
 
 
     
 </head>
 <body class="Index">
      <ul>
-        <li class="selected"><p><a href="index.html">About</a></p></li>
-        <li><p><a href="devlog.html">Devlog</a></p></li>
+        <li class="selected"><p>
+            <a href="index.html">About</a>
+            <div class="NavBarItemUnderline"></div>
+        </p></li>
+        <li><p>
+            <a href="devlog.html">Devlog</a>
+            <div class="NavBarItemUnderline"></div>
+        </p></li>
         <img src="Images/SF_Icon_website.png" alt="" width="3%" style="float: right; padding-top: 8px; padding-right: 1%; " >
     </ul>
 
     <div class="wrap">
-        <img src="Images/RevolverKit.png" alt="" width="100%" style="mask-image: linear-gradient(black, transparent 80%);">  
+        <img src="Images/RevolverKit.png" alt="" width="100%" style="mask-image: linear-gradient(transparent 5%, black 80%, transparent);">  
         <img src="Images/SF_Icon_TransWhite.png" alt="" width="10%" style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
-        <h1 class="Game_Heading">THE VOYAGER PACT</h1>
+        <h1 class="Game_Heading">THE LAST PIONEERS</h1>
         <p class="Game_Subheading">a space RPG | currently in development</p>
     </div>
-    <a class="fancy" href="#">
+    <a class="fancy" href="Steampage.html" target="_blank">
         <span class="top-key"></span>
         <span class="text">WISHLIST NOW</span>
         <span class="bottom-key-1"></span>
@@ -38,18 +41,18 @@
 
     <section class="KeyPoint">
         <h2>THE CONCEPT</h2>
-        <p><b>The Voyager Pact</b> will be a narrative driven singleplayer FPS set in an alternate timeline. This game will have tactical elements, along with survival mechanics.  </p>
+        <p><b>The Last Pioneers</b> will be a First Person, Space RPG, set in the near future.</p>
         <img src="Images/AR-15_Crate.png" alt="" class="KeyPointImage">
     </section>
 
     <section class="KeyPointVar2">
         <h2>STORY</h2>
-        <p>It takes place in the year <b>2035</b>, only a few months after rouge Soviet AI took control of nuclear weapons, destroyed Earth, and <b>killed 90%</b> of the human race. Humanity is now forced to live amongst the stars. You play as a <b>Starsoldier</b> in the United States Space Force, with the ultimate goal of providing security to interplanetary American habitats. Being a soldier, you are given combat objectives that allow you to explore various parts of the solar system.</p>
+        <p>Help Humanity thrive once again, and take revenge on those who committed genocide against humanity.</p>
         <img src="Images/OrbitalSatelite_Downsized.png" alt="" class="KeyPointVar2Image" >
     </section>
     <section class="KeyPoint">
         <h2>ENVIRONMENTS</h2>
-        <p>Every combat mission has its very own map. I plan to include <b>Earth, The Moon, Mars, Europa,</b> and maybe <b>other alien Exo-Planets</b> (like the one shown on the right), as environments to house different maps. Each one of these planets/moons will have 2-3 combat objectives on it, some of them will be on the ground, a few will be in orbit around that planet/moon.</p>
+        <p>Explore interplanetary, and interstellar space. Fight Wars on the final frontiers.</p>
         <img src="Images/Humanity's Second Ocean.png" alt="" class="KeyPointImage">
     </section>
 
@@ -147,6 +150,8 @@
     <br>
     <br>
     
+    <hr>
+
     <h4 class="NewsWrapperTitle">LATEST DEVELOPER NEWS</h4>
     <script>
         //I need to add a new function for each div, just copy and paste an og one
@@ -155,35 +160,35 @@
         function FirstYear() {
             let currentUrl = window.location.origin;
             let redirectFile = "Celebrating1YearofGameDev.html";
-            window.location.href = currentUrl + "/" + redirectFile;
+            window.location.href = redirectFile;
             
         }
 
         function NewIntroMission() {
             let currentUrl = window.location.origin;
             let redirectFile = "MakingNewIntroMission.html";
-            window.location.href = currentUrl + "/" + redirectFile;
+            window.location.href = redirectFile;
             
         }
 
         function DevHelp() {
             let currentUrl = window.location.origin;
             let redirectFile = "GettingHelpWithDevelopment.html";
-            window.location.href = currentUrl + "/" + redirectFile;
+            window.location.href = redirectFile;
             
         }
 
         function Fall2024() {
             let currentUrl = window.location.origin;
             let redirectFile = "2024FallUpdate.html";
-            window.location.href = currentUrl + "/" + redirectFile;
+            window.location.href = redirectFile;
             
         }
 
         function WebsiteCreation() {
             let currentUrl = window.location.origin;
             let redirectFile = "StartingDevelopmentOnThisWebsite.html";
-            window.location.href = currentUrl + "/" + redirectFile;
+            window.location.href = redirectFile;
             
         }
 
@@ -194,7 +199,7 @@
             let redirectFile = "2024SummerUpdate.html";
 
             // And redirect. We will need to add / before the file path
-            window.location.href = currentUrl + "/" + redirectFile;
+            window.location.href = redirectFile;
             
         }
     </script>
@@ -203,7 +208,7 @@
         <div class="NewsBlock" onclick="FirstYear()">
             <img src="Images/FirstScreenshot.png" alt="">
             <h1>Celebrating 1 Year of Game-Dev Progress</h1>
-            <h3>3.3.2025</h3>
+            <h3>3.2.2025</h3>
             <p>GAME DEV</p>
         </div> 
 
@@ -268,28 +273,11 @@
                 let currentMonth = d.getMonth() + 1;
                 let currentYear = d.getFullYear();
     
-                footerText.textContent = "GAME IS STILL IN EARLY DEVELOPMENT | NOTHING IS FINAL | " + currentMonth + "." + currentYear;
+                footerText.textContent = "Keep in mind this game is mostly made by 1 person | NOTHING IS FINAL | " + currentMonth + "." + currentYear;
             </script> 
         </footer>
     </section>
     
-
-    <script>
-        ScrollReveal().reveal('.KeyPointImage',  {
-            distance: '100px',
-            reset: true,
-            delay: 100,
-            viewOffset: {
-                top: 500,
-                bottom: 500
-            }
-        })
-
-        ScrollReveal().reveal('.KeyPointVar2Image',  {
-             
-            
-        })
-    </script>
 </body>
 </html>
 <link rel="stylesheet" href="homestyle.css">

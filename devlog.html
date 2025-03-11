@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Voyager Pact Devlog</title>
+    <title>The Last Pioneers Devlog</title>
     <link rel="icon" href="Images/SF_Icon_website.png" type="image/x-icon">
     <link rel="stylesheet" href="homestyle.css">
 </head>
 <body class="Devlog">
     <ul>
-        <li><p><a href="index.html">About</a></p></li>
-        <li class="selected"><p><a href="devlog.html">Devlog</a></p></li>
+        <li><p>
+            <a href="index.html">About</a>
+            <div class="NavBarItemUnderline"></div>
+        </li>
+        <li class="selected"><p>
+            <a href="devlog.html">Devlog</a>
+            <div class="NavBarItemUnderline"></div>
+        </p></li>
         <img src="Images/SF_Icon_website.png" alt="" width="3%" style="float: right; padding-top: 8px;" >
     </ul>
     <main style="width: 100%;" class="center" >
         <section>
             <br>
             <h1 style="text-align: center; font-family: LexendThin;">DEVLOG</h1>
-            <p style="text-align: center; font-family: LexendThin;">Here I summarize all the key achievements for a specific month of development.
+            <p style="text-align: center; font-family: LexendThin;"> Here, I summarize all the key achivements for a specific month. This is sort of like a developer patch log.</p>
         </section>
         <section >
             <h1 id="buildText">MARCH 2024</h1>
+            <p class="DevVersionHeader">V.DEV-3.24</p>
             <ol class="devlogList">
                 <li>Created the general idea for the game</li>
                 <li>Made lots of different prototype maps, and features</li>
                 <img src="Images/FirstScreenshot.png" alt="">
             </ol>
             <h1 id="buildText">APRIL 2024</h1>
+            <p class="DevVersionHeader">V.DEV-4.24</p>
             <ol class="devlogList">
                 <li>Created a minigame task and a framework for future ones</li>
                 <li>Added the framework for FPS gameplay</li>
@@ -36,6 +44,7 @@
             </ol>
         <section>
             <h1 id="buildText">MAY 2024</h1>
+            <p class="DevVersionHeader">V.DEV-5.24</p>
             <ol class="devlogList">
                 <li>Refined the moon base map</li>
                 <li>Created the first FPS animations</li>
@@ -49,6 +58,7 @@
 
         <section>
             <h1 id="buildText">JUNE 2024</h1>
+            <p class="DevVersionHeader">V.DEV-6.24</p>
             <ol class="devlogList" id="July">
                 <li>Added a launch sequence intro mission, which is likely to be unused as of writing this.</li>
                 <li>Made the first FPS animations</li>
@@ -60,6 +70,7 @@
 
         <section>
             <h1 id="buildText">JULY 2024</h1>
+            <p class="DevVersionHeader">V.DEV-7.24</p>
             <ol class="devlogList" >
                 <li>Tied weapon attributes such as weapon spread, accuracy, and range to the players current combat level. This includes a leveling system with different sublevels.</li>
                 <li>Added a relatively in-depth space combat system for the "Interception" core gamemode.</li>
@@ -76,6 +87,7 @@
 
         <section>
             <h1 id="buildText">AUGUST 2024</h1>
+            <p class="DevVersionHeader">V.DEV-8.24</p>
             <ol class="devlogList">
                 <li>Added basic ground troop soldier AI features such as patrolling and shooting</li>
                 <li>Created a dynamic armor system where the player has a plate of armor per body region. If any damage is taken in that area after the plate breaks, damage will be applied to their actual health. Amount of damage is also applied according to the body segment damaged.</li>
@@ -88,6 +100,7 @@
 
         <section>
             <h1 id="buildText">SEPTEMBER 2024</h1>
+            <p class="DevVersionHeader">V.DEV-9.24</p>
             <ol class="devlogList">
                 <li>Made this website (instead of working on the game ik)</li>
                 <li>Added a fully functioning save/load system, along with the ability to create different save slots.</li>
@@ -102,6 +115,7 @@
 
         <section>
             <h1 id="buildText">OCTOBER 2024</h1>
+            <p class="DevVersionHeader">V.DEV-10.24</p>
             <ol class="devlogList">
                 <li>Added a cool warping sequence that teleports you to the target planet or moon. </li>
                 <li>Added a 3D interactive landing menu</li>
@@ -117,6 +131,7 @@
     
         <section>
             <h1 id="buildText">NOVEMBER 2024</h1>
+            <p class="DevVersionHeader">V.DEV-11.24</p>
             <ol class="devlogList">
                 <li>Created a playable, working prototype of a tutorial, with smart NPCs that teach the player the basics of my game.</li>
                 <li>Replaced the mixamo skeletal mesh of the NPCs to an actual modern astronaut mesh.</li>
@@ -134,6 +149,7 @@
 
         <section>
             <h1 id="buildText">DECEMBER 2024</h1>
+            <p class="DevVersionHeader">V.DEV-12.24</p>
             <ol class="devlogList">
                 <li>Tweaked some of the post processing effects a bit</li>
                 <li>Added pedestrian NPCs that crowd different environments. These NPCs have randomized Metahuman faces.</li>
@@ -148,6 +164,7 @@
         </section>
         <section>
             <h1 id="buildText">JANUARY 2025</h1>
+            <p class="DevVersionHeader">V.DEV-1.25</p>
             <ol class="devlogList">
                 <li>Continued to work on the abandoned Russian City Map (adding new meshes, flags, extra details, etc)</li>
                 <li>Developed the 7th build of the game, and ran the game's first proper play test, which taught me many things that needed to be prioritized, like proper optimization. </li>
@@ -161,6 +178,7 @@
         </section>
         <section>
             <h1 id="buildText">FEBRUARY 2025</h1>
+            <p class="DevVersionHeader">V.DEV-2.25</p>
             <ol class="devlogList">
                 <li>Continued to work on the new intro level, by allowing the player to choose their starter class/profession, and name, in a cool interactive cutscene.</li>
                 <li>Added a lore system to the game, the player can now found VHS Tapes, CDs, or files that they can view later</li>
@@ -173,8 +191,10 @@
         </section>
         <section>
             <h1 id="buildText">MARCH 2025</h1>
+            <p class="DevVersionHeader">V.DEV-3.25</p>
             <ol class="devlogList">
                 <li>Added an Extreme Radiation Hazard, that was built upon the status UI I added last month.</li>
+                <li>Improved the Starmap and Dev menus a bit</li>
                 <img src="Images/Truck.png" alt="">
             </ol>
         </section>
