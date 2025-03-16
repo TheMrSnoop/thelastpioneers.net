@@ -37,8 +37,6 @@
         <span class="bottom-key-2"></span>
     </a>
     
-
-
     <section class="KeyPoint">
         <h2>THE CONCEPT</h2>
         <p><b>The Last Pioneers</b> will be a First Person, Space RPG, set in the near future.</p>
@@ -156,38 +154,44 @@
     <script>
         //I need to add a new function for each div, just copy and paste an og one
         
+        function Winter2025() {
+            let currentUrl = window.location.origin;
+            let redirectFile = "Articles/2025WinterUpdate.html";
+            window.location.href = redirectFile;
+            
+        }
 
         function FirstYear() {
             let currentUrl = window.location.origin;
-            let redirectFile = "Celebrating1YearofGameDev.html";
+            let redirectFile = "Articles/Celebrating1YearofGameDev.html";
             window.location.href = redirectFile;
             
         }
 
         function NewIntroMission() {
             let currentUrl = window.location.origin;
-            let redirectFile = "MakingNewIntroMission.html";
+            let redirectFile = "Articles/MakingNewIntroMission.html";
             window.location.href = redirectFile;
             
         }
 
         function DevHelp() {
             let currentUrl = window.location.origin;
-            let redirectFile = "GettingHelpWithDevelopment.html";
+            let redirectFile = "Articles/GettingHelpWithDevelopment.html";
             window.location.href = redirectFile;
             
         }
 
         function Fall2024() {
             let currentUrl = window.location.origin;
-            let redirectFile = "2024FallUpdate.html";
+            let redirectFile = "Articles/2024FallUpdate.html";
             window.location.href = redirectFile;
             
         }
 
         function WebsiteCreation() {
             let currentUrl = window.location.origin;
-            let redirectFile = "StartingDevelopmentOnThisWebsite.html";
+            let redirectFile = "Articles/StartingDevelopmentOnThisWebsite.html";
             window.location.href = redirectFile;
             
         }
@@ -196,13 +200,21 @@
             // First we will need to get the url of your webpage
             let currentUrl = window.location.origin;
             // Relative Path
-            let redirectFile = "2024SummerUpdate.html";
+            let redirectFile = "Articles/2024SummerUpdate.html";
 
             // And redirect. We will need to add / before the file path
             window.location.href = redirectFile;
             
         }
     </script>
+    <div class="NewsWrapper">
+        <div class="NewsBlock" onclick="Winter2025()">
+            <img src="Images/Ruins.png" alt="">
+            <h1>Winter 2025 Developer Update</h1>
+            <h3>3.15.2025</h3>
+            <p>GAME DEV</p>
+        </div> 
+    </div>
     <div class="NewsWrapper">
 
         <div class="NewsBlock" onclick="FirstYear()">

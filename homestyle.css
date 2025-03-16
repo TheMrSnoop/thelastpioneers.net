@@ -485,6 +485,12 @@ div.scroll-container img {
   background-image: linear-gradient(#040404, black)
 }
 
+.MonthRemarks
+{
+  list-style-type: none;
+  padding-top: 10px;
+}
+
 .Gallery
 {
   color: white; 
@@ -1190,6 +1196,8 @@ KeyFeaturesOL li
    font-family: "Lexend";
  }
  
+ 
+
  
 
  
