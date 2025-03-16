@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 html, body
 {
     margin: 0;
     padding: 0;
 }
 
+html
+{
+    scrollbar-width: none;
+}
+
+body
+{
+    -ms-overflow-style: none;
+}
+
+
+body::-webkit-scrollbar, body::-webkit-scrollbar-button
+{
+    display: none;
+}
 
 
 @font-face {
@@ -120,7 +137,6 @@ ul {
 ul li {
     float: left;
     font-size: 18px;
-    font-family: LexendThin;
     font-weight: 1000;
     padding-left: 0%;
     padding-right: 0%;
@@ -130,8 +146,8 @@ ul li {
 ul li p
 {
   font-size: 18px;
-  font-family: LexendThin;
-  font-weight: 1000;
+  font-family: Nunito;
+  font-weight: 500;
 }
 
 
@@ -150,6 +166,16 @@ li a:hover {
 
 }
 
+
+#NavBarProgressBar
+{
+  width: 0vw;
+  height: 2px;
+  background-color: white;
+  position: fixed;
+  z-index: 4;
+  float: left;
+}
 
 footer p
 {
@@ -175,7 +201,7 @@ footer p
   }
   100%
   {
-    background-color: black;
+    background-color: #040404;
   }
 }
 
@@ -183,7 +209,7 @@ footer p
 @keyframes HideNavbar {
   0%
   {
-    background-color: black;
+    background-color: #040404;
   }
   100%
   {
