@@ -799,6 +799,7 @@ KeyFeaturesOL li
 .NewsBlock img
 {
   width: 100%;
+  box-shadow: black 5px 5px 5px;
 }
 
 .NewsBlock:hover

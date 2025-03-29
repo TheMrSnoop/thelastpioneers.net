@@ -46,12 +46,12 @@
     <section class="KeyPointVar2">
         <h2>STORY</h2>
         <p>Help humanity thrive once again, and take revenge on those who committed genocide against humanity.</p>
-        <img src="Images/OrbitalSatelite_Downsized.png" alt="" class="KeyPointVar2Image" >
+        <img src="Images/The Last Pioneer Sketch.png" alt="" class="KeyPointVar2Image" >
     </section>
     <section class="KeyPoint">
         <h2>ENVIRONMENTS</h2>
         <p>Travel the Solar System. Fight Wars on the final frontiers.</p>
-        <img src="Images/Humanity's Second Ocean.png" alt="" class="KeyPointImage">
+        <img src="Images/OrbitalSatelite_Downsized.png" alt="" class="KeyPointImage">
     </section>
 
     <section class="devclock">
@@ -154,6 +154,13 @@
     <script>
         //I need to add a new function for each div, just copy and paste an og one
         
+        function MissionHub() {
+            let currentUrl = window.location.origin;
+            let redirectFile = "Articles/MissionHub.html";
+            window.location.href = redirectFile;
+            
+        }
+
         function Winter2025() {
             let currentUrl = window.location.origin;
             let redirectFile = "Articles/2025WinterUpdate.html";
@@ -208,6 +215,12 @@
         }
     </script>
     <div class="NewsWrapper">
+        <div class="NewsBlock" onclick="MissionHub()">
+            <img src="Images/MissionHubRough.png" alt="">
+            <h1>Introducing Mission Hubs</h1>
+            <h3>3.27.2025</h3>
+            <p>GAME DEV</p>
+        </div> 
         <div class="NewsBlock" onclick="Winter2025()">
             <img src="Images/Ruins.png" alt="">
             <h1>Winter 2025 Developer Update</h1>
@@ -285,7 +298,7 @@
                 let currentMonth = d.getMonth() + 1;
                 let currentYear = d.getFullYear();
     
-                footerText.textContent = "This game is made by a solo developer | NOTHING IS FINAL | " + currentMonth + "." + currentYear;
+                footerText.textContent = "This is a passion project made by a solo developer | NOTHING IS FINAL | " + currentMonth + "." + currentYear;
             </script> 
         </footer>
     </section>
