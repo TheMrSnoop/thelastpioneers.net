@@ -64,7 +64,7 @@ img
   object-fit: contain;
 }
 
-h5, h1, h3, h4
+h5, h1, h3, h4, h6
 {
     padding: 0 0 0 10%;
     font-family: Lexend;
@@ -83,7 +83,13 @@ h1
     font-size: 48px;
 }
 
-
+h6
+{
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+}
 p
 {
     font-family: Lexend;

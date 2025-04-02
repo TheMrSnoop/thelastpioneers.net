@@ -810,8 +810,6 @@ KeyFeaturesOL li
 
 
 
-
-
 .NewsBlock h1, h3, p
 {
   text-align: left;
@@ -1197,6 +1195,35 @@ KeyFeaturesOL li
    font-family: "Lexend";
  }
  
+
+
+
+.DeveloperNote
+{
+  width: 50%;
+  margin: 2.5% auto 2.5% auto;
+  display: flex;
+  pointer-events: none;
+  user-select: none;
+}
+
+.DevNote_Bubble
+{
+  background-color: #0a0a0a28;
+  backdrop-filter: blur(3px);
+  box-shadow: black 5px 5px 5px;
+  padding: 2%;
+}
+
+
+.DeveloperNote img
+{
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  box-shadow: black 5px 5px 5px;
+}
  
 
  
