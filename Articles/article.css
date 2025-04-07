@@ -64,6 +64,15 @@ img
   object-fit: contain;
 }
 
+.Mobile_Image
+{
+  width: 100%;
+  /* margin:auto doesn't seem to work, so 100% - width(50%) = margin-left + margin-right */
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+}
+
 h5, h1, h3, h4, h6
 {
     padding: 0 0 0 10%;
@@ -97,12 +106,24 @@ p
     padding: 0% 30% 0 30%;
 }
 
+.P_Mobile
+{
+  padding: 1%;
+}
 
 h4
 {
     text-align: center;
     font-size: 24px;
     padding: 0 30% 0 30%;
+}
+
+.h4_Mobile
+{
+  text-align: center;
+  font-size: 24px;
+  padding: 1%;
+  margin: 0;
 }
 
 .center
