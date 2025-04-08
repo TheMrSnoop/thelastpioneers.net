@@ -6,9 +6,10 @@
     <title>The Last Pioneers Devlog</title>
     <link rel="icon" href="Images/SF_Icon_website.png" type="image/x-icon">
     <link rel="stylesheet" href="homestyle.css">
+
 </head>
 <body class="Devlog">
-    <ul>
+    <ul id="NormalNavbar">
         <li><p>
             <a href="index.html">ABOUT</a>
             <div class="NavBarItemUnderline"></div>
@@ -19,8 +20,16 @@
         </p></li>
         <img src="Images/SF_Icon_website.png" alt="" width="3%" style="float: right; padding-top: 8px;" >
     </ul>
+    <div class="MobileNavBar" id="MobileNavBar">
+        <a href="index_mobile.html" class="NavbarIcon">
+            <img src="Images/SF_Icon_website.png" alt="">
+        </a>
+        <a href="devlog.html" class="HamburgerMenu">
+            DEVLOG
+        </a>
+    </div>
     <main style="width: 100%;" class="center" >
-        <h4 class="NewsWrapperTitle">LATEST DEVELOPER NEWS</h4>
+        <h4 class="NewsWrapperTitle" id="NewsWrapperTitle">LATEST DEVELOPER NEWS</h4>
         <script>
             //I need to add a new function for each div, just copy and paste an og one
             
@@ -150,46 +159,140 @@
 
         </div>
         <hr>
-        <section >
-            <h1 id="buildText">MARCH 2024</h1>
-            <p class="DevVersionHeader">V.DEV-3.24</p>
-            <ol class="devlogList">
-                <li>Created the general idea for the game</li>
-                <li>Made lots of different prototype maps, and features</li>
-                <img src="Images/FirstScreenshot.png" alt="">
-            </ol>
-            <h1 id="buildText">APRIL 2024</h1>
-            <p class="DevVersionHeader">V.DEV-4.24</p>
-            <ol class="devlogList">
-                <li>Created a minigame task and a framework for future ones</li>
-                <li>Added the framework for FPS gameplay</li>
-                <li>Made both the 1st, and 2nd build of the game.</li>
-                <li>Refined the in-game menus</li>
-                <img src="Images/HighresScreenshot00004.png" alt="">
-            </ol>
+
+
+
+
         <section>
-            <h1 id="buildText">MAY 2024</h1>
-            <p class="DevVersionHeader">V.DEV-5.24</p>
+            <h1 id="buildText">APRIL 2025</h1>
+            <p class="DevVersionHeader">V.DEV-4.25</p>
             <ol class="devlogList">
-                <li>Refined the moon base map</li>
-                <li>Created the first FPS animations</li>
-                <li>Made a custom VHS styled shader for the game.</li>
-                <li>Made the player HUD 3D</li>
-                <li>Refined the in-game menus</li>
-                <li>Made the 3rd build of the game.</li>
-                <img src="Images/americanflag.png" alt="" > 
+                <li>Started work on a new map, Grand Nova. This is a strictly commercial zone, where the player will be able to buy many items from many different vendors. </li>
+                <img src="Images/GrandNova Rough.png" alt="">
             </ol>
         </section>
 
         <section>
-            <h1 id="buildText">JUNE 2024</h1>
-            <p class="DevVersionHeader">V.DEV-6.24</p>
-            <ol class="devlogList" id="July">
-                <li>Added a launch sequence intro mission, which is likely to be unused as of writing this.</li>
-                <li>Made the first FPS animations</li>
-                <li>Refined the in-game menus</li>
-                <li>Made the 4th build of the game.</li>
-                <img src="Images/freebird.png" alt="" > 
+            <h1 id="buildText">MARCH 2025</h1>
+            <p class="DevVersionHeader">V.DEV-3.25</p>
+            <ol class="devlogList">
+                <li>Added an Extreme Radiation Hazard, that was built upon the status UI I added last month.</li>
+                <li>Improved the Starmap and Dev menus a bit</li>
+                <li>Added a physically accurate model of Earth to the Title Screen with proper time, and sun location synchronization. </li>
+                <li>Added a proper Settings menu with Video, Graphics, Gameplay, Audio, Input, and UI options.</li>
+                <li>Re-designed the saves menu</li>
+                <li>Started working on a new mission, and added a minigame for it. This minigame is similar to one of those aerial bombing missions you'd see in Call of Duty.</li>
+                <li>Began the process of replacing the orbit level with mission hubs. I plan on creating 6 of these levels/mission hubs, for all 6 of the (planned as of right now) playable worlds. </li>
+                <li>Added procedurally generated foliage along with a custom landscape material for Polaris Island (Intro Mission)</li>
+                <li>Made the Soviet Drop Pods rain down from space for Polaris Island (Intro Mission)</li>
+                <img src="Images/EarthStartScreen.png" alt="">
+            </ol>
+        </section>
+
+        <section>
+            <h1 id="buildText">FEBRUARY 2025</h1>
+            <p class="DevVersionHeader">V.DEV-2.25</p>
+            <ol class="devlogList">
+                <li>Continued to work on the new intro level, by allowing the player to choose their starter class/profession, and name, in a cool interactive cutscene.</li>
+                <li>Added a lore system to the game, the player can now found VHS Tapes, CDs, or files that they can view later</li>
+                <li>Added a few quality of life things to make FPS gameplay feel more smooth</li>
+                <li>Improved the design of a few UI elements</li>
+                <li>Tweaked the post processing effects for the game</li>
+                <li>Added a status UI, to effectively tell the player which effects are currently applied (Bleeding out, broken leg, etc.)</li>
+                <img src="Images/Helipad_downsized.png" alt="">
+            </ol>
+        </section>
+
+        <section>
+            <h1 id="buildText">JANUARY 2025</h1>
+            <p class="DevVersionHeader">V.DEV-1.25</p>
+            <ol class="devlogList">
+                <li>Continued to work on the abandoned Russian City Map (adding new meshes, flags, extra details, etc)</li>
+                <li>Developed the 7th build of the game, and ran the game's first proper play test, which taught me many things that needed to be prioritized, like proper optimization. </li>
+                <li>Created the Basic AI States for the Watchdog Spider-bot enemy</li>
+                <li>Created a foundation for easily creating multiple new ships.</li>
+                <li>Added the CT-Night Eagle ship</li>
+                <li>Remade the Starship HUD UI</li>
+                <li>Started working on a new intro mission (I think the one that is mostly complete is too boring/bland)</li>
+                <img src="Images/PolarisBase.png" alt="">
+            </ol>
+        </section>
+
+        <section>
+            <h1 id="buildText">DECEMBER 2024</h1>
+            <p class="DevVersionHeader">V.DEV-12.24</p>
+            <ol class="devlogList">
+                <li>Tweaked some of the post processing effects a bit</li>
+                <li>Added pedestrian NPCs that crowd different environments. These NPCs have randomized Metahuman faces.</li>
+                <li>Added the framework for a leveling system to each separate weapon</li>
+                <li>Started work on a abandoned Russian City map, with an exploration mission giving the player the freedom to explore to their liking.</li>
+                <li>Added dynamic sounds to shooting and walking on  different materials. </li>
+                <li>Completely revamped the Jetpack system, replacing the overheating bar with multiple Jetpack uses. The jetpack in general is also way better, more fun, and viable to use.</li>
+                <li>Added a new exoplanet, Proteus. It's a water world, and the first exoplanet discovered by humanity.</li>
+                <li>Completely remade the Starship movement, it now feels more grounded, feeling more like a jet than a rocket.</li>
+                <img src="Images/Humanity's Second Ocean.png" alt="">
+            </ol>
+        </section>
+
+        <section>
+            <h1 id="buildText">NOVEMBER 2024</h1>
+            <p class="DevVersionHeader">V.DEV-11.24</p>
+            <ol class="devlogList">
+                <li>Created a playable, working prototype of a tutorial, with smart NPCs that teach the player the basics of my game.</li>
+                <li>Replaced the mixamo skeletal mesh of the NPCs to an actual modern astronaut mesh.</li>
+                <li>Replaced the old astronaut arms with way better ones</li>
+                <li>Added the 357 Magnum Weapon (fully works, fully custom animated, etc.)</li>
+                <li>Added a compass to the HUD</li>
+                <li>Continued to update a lot of the hud elements</li>
+                <li>Updated the overall look of this website, to better match the new UI style of the game.</li>
+                <li>Created the 6th build of the game</li>
+                <li>Added the setup screen, where the player customizes their personal AI, and sets some basic settings.</li>
+                <li>Made the orbiting menu more realistic by adding a static sun, dynamic sunlight intensity/sizes, and a new Earth texture that better fits the story of the game.</li>
+                <img src="Images/AI.png" alt="">
+            </ol>
+        </section>
+
+        <section>
+            <h1 id="buildText">OCTOBER 2024</h1>
+            <p class="DevVersionHeader">V.DEV-10.24</p>
+            <ol class="devlogList">
+                <li>Added a cool warping sequence that teleports you to the target planet or moon. </li>
+                <li>Added a 3D interactive landing menu</li>
+                <li>Added realistic atmospheres to the appropriate planetary bodies</li>
+                <li>Started work on the Basic Training level (The Tutorial).</li>
+                <li>Reworked the way missions are handled.</li>
+                <li>Replaced the stylized, computer interface user interface with a more futuristic, sci-fi UI. </li>
+                <li>Added semi-smart NPC's with their own dialog, backstory, and ranking. </li>
+                <li>Continued to work on this website a little bit</li>
+                <img src="Images/EarthOrbit_1440p.png" alt="">
+            </ol>
+        </section>
+
+        <section>
+            <h1 id="buildText">SEPTEMBER 2024</h1>
+            <p class="DevVersionHeader">V.DEV-9.24</p>
+            <ol class="devlogList">
+                <li>Made this website (instead of working on the game ik)</li>
+                <li>Added a fully functioning save/load system, along with the ability to create different save slots.</li>
+                <li>Added 3 Cybersoldier Hacks. This is a special mechanic unique to the Cybersoldier class.</li>
+                <li>Added 2 new types of enemy spacecraft, along with adding 4 types of Starship upgrades that consists of new mechanics and weapons, along with a solid progression system.</li>
+                <li>Started work on a new map that will be designed specifically for the new scope of the game. It's located on the frozen polar ice caps of Mars, where a Soviet laboratory is suspected of doing experiments on frozen alien lifeforms. Most of the map will be designed using modular parts.  </li>
+                <li>Continued to polish the FPS gameplay</li>
+                <li>Refined the in game-menus</li>
+                <img src="Images/Airlock-1440p.png" alt="">
+            </ol>
+        </section>
+
+        <section>
+            <h1 id="buildText">AUGUST 2024</h1>
+            <p class="DevVersionHeader">V.DEV-8.24</p>
+            <ol class="devlogList">
+                <li>Added basic ground troop soldier AI features such as patrolling and shooting</li>
+                <li>Created a dynamic armor system where the player has a plate of armor per body region. If any damage is taken in that area after the plate breaks, damage will be applied to their actual health. Amount of damage is also applied according to the body segment damaged.</li>
+                <li>Added the framework for 3 player classes. (Assassin, Commando, Cybersoldier). Framework as in modified attributes and stats. </li>
+                <li>Added a TON of detail to the GDD, which has reached a peak of over 10,000 words. Actual story and lore are now beginning to take shape, as well as a much larger scope for the game.</li>
+                <li>Refined the in game-menus</li>
+                <img src="Images/HighresScreenshot00008.png" alt="">
             </ol>
         </section>
 
@@ -211,133 +314,117 @@
         </section>
 
         <section>
-            <h1 id="buildText">AUGUST 2024</h1>
-            <p class="DevVersionHeader">V.DEV-8.24</p>
-            <ol class="devlogList">
-                <li>Added basic ground troop soldier AI features such as patrolling and shooting</li>
-                <li>Created a dynamic armor system where the player has a plate of armor per body region. If any damage is taken in that area after the plate breaks, damage will be applied to their actual health. Amount of damage is also applied according to the body segment damaged.</li>
-                <li>Added the framework for 3 player classes. (Assassin, Commando, Cybersoldier). Framework as in modified attributes and stats. </li>
-                <li>Added a TON of detail to the GDD, which has reached a peak of over 10,000 words. Actual story and lore are now beginning to take shape, as well as a much larger scope for the game.</li>
-                <li>Refined the in game-menus</li>
-                <img src="Images/HighresScreenshot00008.png" alt="">
+            <h1 id="buildText">JUNE 2024</h1>
+            <p class="DevVersionHeader">V.DEV-6.24</p>
+            <ol class="devlogList" id="July">
+                <li>Added a launch sequence intro mission, which is likely to be unused as of writing this.</li>
+                <li>Made the first FPS animations</li>
+                <li>Refined the in-game menus</li>
+                <li>Made the 4th build of the game.</li>
+                <img src="Images/freebird.png" alt="" > 
             </ol>
         </section>
 
         <section>
-            <h1 id="buildText">SEPTEMBER 2024</h1>
-            <p class="DevVersionHeader">V.DEV-9.24</p>
+            <h1 id="buildText">MAY 2024</h1>
+            <p class="DevVersionHeader">V.DEV-5.24</p>
             <ol class="devlogList">
-                <li>Made this website (instead of working on the game ik)</li>
-                <li>Added a fully functioning save/load system, along with the ability to create different save slots.</li>
-                <li>Added 3 Cybersoldier Hacks. This is a special mechanic unique to the Cybersoldier class.</li>
-                <li>Added 2 new types of enemy spacecraft, along with adding 4 types of Starship upgrades that consists of new mechanics and weapons, along with a solid progression system.</li>
-                <li>Started work on a new map that will be designed specifically for the new scope of the game. It's located on the frozen polar ice caps of Mars, where a Soviet laboratory is suspected of doing experiments on frozen alien lifeforms. Most of the map will be designed using modular parts.  </li>
-                <li>Continued to polish the FPS gameplay</li>
-                <li>Refined the in game-menus</li>
-                <img src="Images/Airlock-1440p.png" alt="">
+                <li>Refined the moon base map</li>
+                <li>Created the first FPS animations</li>
+                <li>Made a custom VHS styled shader for the game.</li>
+                <li>Made the player HUD 3D</li>
+                <li>Refined the in-game menus</li>
+                <li>Made the 3rd build of the game.</li>
+                <img src="Images/americanflag.png" alt="" > 
             </ol>
         </section>
 
         <section>
-            <h1 id="buildText">OCTOBER 2024</h1>
-            <p class="DevVersionHeader">V.DEV-10.24</p>
+            <h1 id="buildText">APRIL 2024</h1>
+            <p class="DevVersionHeader">V.DEV-4.24</p>
             <ol class="devlogList">
-                <li>Added a cool warping sequence that teleports you to the target planet or moon. </li>
-                <li>Added a 3D interactive landing menu</li>
-                <li>Added realistic atmospheres to the appropriate planetary bodies</li>
-                <li>Started work on the Basic Training level (The Tutorial).</li>
-                <li>Reworked the way missions are handled.</li>
-                <li>Replaced the stylized, computer interface user interface with a more futuristic, sci-fi UI. </li>
-                <li>Added semi-smart NPC's with their own dialog, backstory, and ranking. </li>
-                <li>Continued to work on this website a little bit</li>
-                <img src="Images/EarthOrbit_1440p.png" alt="">
-            </ol>
-        </section>
-    
-        <section>
-            <h1 id="buildText">NOVEMBER 2024</h1>
-            <p class="DevVersionHeader">V.DEV-11.24</p>
-            <ol class="devlogList">
-                <li>Created a playable, working prototype of a tutorial, with smart NPCs that teach the player the basics of my game.</li>
-                <li>Replaced the mixamo skeletal mesh of the NPCs to an actual modern astronaut mesh.</li>
-                <li>Replaced the old astronaut arms with way better ones</li>
-                <li>Added the 357 Magnum Weapon (fully works, fully custom animated, etc.)</li>
-                <li>Added a compass to the HUD</li>
-                <li>Continued to update a lot of the hud elements</li>
-                <li>Updated the overall look of this website, to better match the new UI style of the game.</li>
-                <li>Created the 6th build of the game</li>
-                <li>Added the setup screen, where the player customizes their personal AI, and sets some basic settings.</li>
-                <li>Made the orbiting menu more realistic by adding a static sun, dynamic sunlight intensity/sizes, and a new Earth texture that better fits the story of the game.</li>
-                <img src="Images/AI.png" alt="">
+                <li>Created a minigame task and a framework for future ones</li>
+                <li>Added the framework for FPS gameplay</li>
+                <li>Made both the 1st, and 2nd build of the game.</li>
+                <li>Refined the in-game menus</li>
+                <img src="Images/HighresScreenshot00004.png" alt="">
             </ol>
         </section>
 
         <section>
-            <h1 id="buildText">DECEMBER 2024</h1>
-            <p class="DevVersionHeader">V.DEV-12.24</p>
+            <h1 id="buildText">MARCH 2024</h1>
+            <p class="DevVersionHeader">V.DEV-3.24</p>
             <ol class="devlogList">
-                <li>Tweaked some of the post processing effects a bit</li>
-                <li>Added pedestrian NPCs that crowd different environments. These NPCs have randomized Metahuman faces.</li>
-                <li>Added the framework for a leveling system to each separate weapon</li>
-                <li>Started work on a abandoned Russian City map, with an exploration mission giving the player the freedom to explore to their liking.</li>
-                <li>Added dynamic sounds to shooting and walking on  different materials. </li>
-                <li>Completely revamped the Jetpack system, replacing the overheating bar with multiple Jetpack uses. The jetpack in general is also way better, more fun, and viable to use.</li>
-                <li>Added a new exoplanet, Proteus. It's a water world, and the first exoplanet discovered by humanity.</li>
-                <li>Completely remade the Starship movement, it now feels more grounded, feeling more like a jet than a rocket.</li>
-                <img src="Images/Humanity's Second Ocean.png" alt="">
-            </ol>
-        </section>
-        <section>
-            <h1 id="buildText">JANUARY 2025</h1>
-            <p class="DevVersionHeader">V.DEV-1.25</p>
-            <ol class="devlogList">
-                <li>Continued to work on the abandoned Russian City Map (adding new meshes, flags, extra details, etc)</li>
-                <li>Developed the 7th build of the game, and ran the game's first proper play test, which taught me many things that needed to be prioritized, like proper optimization. </li>
-                <li>Created the Basic AI States for the Watchdog Spider-bot enemy</li>
-                <li>Created a foundation for easily creating multiple new ships.</li>
-                <li>Added the CT-Night Eagle ship</li>
-                <li>Remade the Starship HUD UI</li>
-                <li>Started working on a new intro mission (I think the one that is mostly complete is too boring/bland)</li>
-                <img src="Images/PolarisBase.png" alt="">
-            </ol>
-        </section>
-        <section>
-            <h1 id="buildText">FEBRUARY 2025</h1>
-            <p class="DevVersionHeader">V.DEV-2.25</p>
-            <ol class="devlogList">
-                <li>Continued to work on the new intro level, by allowing the player to choose their starter class/profession, and name, in a cool interactive cutscene.</li>
-                <li>Added a lore system to the game, the player can now found VHS Tapes, CDs, or files that they can view later</li>
-                <li>Added a few quality of life things to make FPS gameplay feel more smooth</li>
-                <li>Improved the design of a few UI elements</li>
-                <li>Tweaked the post processing effects for the game</li>
-                <li>Added a status UI, to effectively tell the player which effects are currently applied (Bleeding out, broken leg, etc.)</li>
-                <img src="Images/Helipad_downsized.png" alt="">
-            </ol>
-        </section>
-        <section>
-            <h1 id="buildText">MARCH 2025</h1>
-            <p class="DevVersionHeader">V.DEV-3.25</p>
-            <ol class="devlogList">
-                <li>Added an Extreme Radiation Hazard, that was built upon the status UI I added last month.</li>
-                <li>Improved the Starmap and Dev menus a bit</li>
-                <li>Added a physically accurate model of Earth to the Title Screen with proper time, and sun location synchronization. </li>
-                <li>Added a proper Settings menu with Video, Graphics, Gameplay, Audio, Input, and UI options.</li>
-                <li>Re-designed the saves menu</li>
-                <li>Started working on a new mission, and added a minigame for it. This minigame is similar to one of those aerial bombing missions you'd see in Call of Duty.</li>
-                <li>Began the process of replacing the orbit level with mission hubs. I plan on creating 6 of these levels/mission hubs, for all 6 of the (planned as of right now) playable worlds. </li>
-                <li>Added procedurally generated foliage along with a custom landscape material for Polaris Island (Intro Mission)</li>
-                <li>Made the Soviet Drop Pods rain down from space for Polaris Island (Intro Mission)</li>
-                <img src="Images/EarthStartScreen.png" alt="">
-            </ol>
-        </section>
-        <section>
-            <h1 id="buildText">APRIL 2025</h1>
-            <p class="DevVersionHeader">V.DEV-4.25</p>
-            <ol class="devlogList">
-                <li>Started work on a new map, Grand Nova. This is a strictly commercial zone, where the player will be able to buy many items from many different vendors. </li>
-                <img src="Images/GrandNova Rough.png" alt="">
+                <li>Created the general idea for the game</li>
+                <li>Made lots of different prototype maps, and features</li>
+                <img src="Images/FirstScreenshot.png" alt="">
             </ol>
         </section>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AdjustForDisplayRatio();
+        })
+        function MobilizeElement(array, className)
+        {
+            for (let index = 0; index < array.length; index++) {
+                const element = array[index];
+                element.className = "";
+                element.classList.add(className);
+            }
+        }
+
+        function AdjustForDisplayRatio()
+        {
+            const baseHeight = window.innerHeight;
+            const baseWidth = window.innerWidth;
+
+            const lists = document.getElementsByClassName("devlogList");
+            const NewsWrappers = document.getElementsByClassName("NewsWrapper");
+
+            const NormalNavBar_obj = document.getElementsByTagName("ul")[0];
+            const MobileNavBar_obj = document.getElementById("MobileNavBar");
+
+            const DevlogHeading = document.getElementById("NewsWrapperTitle");
+            
+            if (NormalNavBar_obj == null) { 
+                console.warn("Normal Nav Bar is null")
+            }
+            else
+            {
+                NormalNavBar_obj.style.display = 'none';
+            }
+
+            if (MobileNavBar_obj == null) { 
+                console.warn("Mobile Nav Bar is null")
+            }
+            else
+            {
+                MobileNavBar_obj.style.display = 'none';
+            }
+        
+
+
+            
+            
+            ratio = (Math.round((baseWidth / baseHeight) * 100)) / 100
+
+            console.log(ratio)
+
+            if (ratio < 0.85)
+            {
+                MobilizeElement(lists, "mobile_devlogList");
+                MobilizeElement(NewsWrappers, "Mobile_NewsWrapper");
+                MobileNavBar_obj.style.display = 'inline';
+                DevlogHeading.style.paddingTop = "15%";
+                DevlogHeading.style.fontSize = "24px";
+            }
+            else
+            {
+                NormalNavBar_obj.style.display = 'inline';
+            }
+        }
+    </script>
 </body>
 </html>

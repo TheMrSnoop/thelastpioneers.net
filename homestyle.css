@@ -513,6 +513,19 @@ div.scroll-container img {
   padding-right: 30%;
 }
 
+.mobile_devlogList
+{
+  list-style-type: circle;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 12px;
+}
+
+.mobile_devlogList img
+{
+  width: 100%;
+}
+
 
 .devlogList li
 {
@@ -771,6 +784,18 @@ KeyFeaturesOL li
   justify-content: center;
   align-items: center; 
 
+}
+
+.Mobile_NewsWrapper
+{
+  width: 100%;
+  padding: 0;
+  margin: 0 10% 0 10%;
+  display: inline;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; 
+  border: 2px white solid;
 }
 
 .NewsWrapperTitle
@@ -1194,6 +1219,54 @@ KeyFeaturesOL li
    font-size: 20px;
    font-family: "Lexend";
  }
+
+
+.MobileNavBar
+{
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    transform: translateZ(0);
+    will-change: transform;
+    
+}
+
+
+
+.NavbarIcon
+{
+    height: 40px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.MobileNavBar a img
+{
+    height: 100%;
+}
+
+.HamburgerMenu
+{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
  
 
 
