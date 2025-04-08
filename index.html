@@ -7,11 +7,26 @@
     <link rel="icon" href="Images/SF_Icon_website.png" type="image/x-icon">
     <title>The Last Pioneers</title>
 
-
-
-    
 </head>
-<body class="Index">
+<body class="Index" onload="CheckForMobile()">
+
+    <script>
+        function CheckForMobile() 
+        {
+            const baseHeight = window.innerHeight;
+            const baseWidth = window.innerWidth;
+
+            ratio = (Math.round((baseWidth / baseHeight) * 100)) / 100
+
+            if (ratio < 0.85)
+            {
+                let currentUrl = window.location.origin;
+                let redirectFile = "index_mobile.html";
+                window.location.href = redirectFile;
+            }
+        }
+    </script>
+
      <ul>
         <li class="selected"><p>
             <a href="index.html">ABOUT</a>
