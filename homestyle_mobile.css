@@ -137,16 +137,28 @@ hr
 
 .NavbarIcon
 {
-    height: 100%;
+    height: 40px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-10%, -50%);
 }
 
 .MobileNavBar a img
 {
-    height: 75%;
-    float: right;
-    margin: 2% 5% 0 0;
+    height: 100%;
 }
 
+.HamburgerMenu
+{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
 
 
 .Mobile_Devclock

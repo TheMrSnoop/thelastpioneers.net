@@ -41,5 +41,6 @@ function Clock()
 function Start()
 {
     Clock();
-    UpdateFooter();
 }
+
+UpdateFooter();

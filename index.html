@@ -7,9 +7,6 @@
     <link rel="icon" href="Images/SF_Icon_website.png" type="image/x-icon">
     <title>The Last Pioneers</title>
 
-</head>
-<body class="Index" onload="CheckForMobile()">
-
     <script>
         function CheckForMobile() 
         {
@@ -25,7 +22,12 @@
                 window.location.href = redirectFile;
             }
         }
+        CheckForMobile()
     </script>
+</head>
+<body class="Index">
+
+
 
      <ul>
         <li class="selected"><p>
@@ -165,142 +167,7 @@
     
     <hr>
 
-    <h4 class="NewsWrapperTitle">LATEST DEVELOPER NEWS</h4>
-    <script>
-        //I need to add a new function for each div, just copy and paste an og one
-        
-        function Spring2025() {
-            let currentUrl = window.location.origin;
-            let redirectFile = "Articles/2025SpringUpdate.html";
-            window.location.href = redirectFile;
-            
-        }
-
-        function Winter2025() {
-            let currentUrl = window.location.origin;
-            let redirectFile = "Articles/2025WinterUpdate.html";
-            window.location.href = redirectFile;
-            
-        }
-
-        function FirstYear() {
-            let currentUrl = window.location.origin;
-            let redirectFile = "Articles/Celebrating1YearofGameDev.html";
-            window.location.href = redirectFile;
-            
-        }
-
-        function NewIntroMission() {
-            let currentUrl = window.location.origin;
-            let redirectFile = "Articles/MakingNewIntroMission.html";
-            window.location.href = redirectFile;
-            
-        }
-
-        function DevHelp() {
-            let currentUrl = window.location.origin;
-            let redirectFile = "Articles/GettingHelpWithDevelopment.html";
-            window.location.href = redirectFile;
-            
-        }
-
-        function Fall2024() {
-            let currentUrl = window.location.origin;
-            let redirectFile = "Articles/2024FallUpdate.html";
-            window.location.href = redirectFile;
-            
-        }
-
-        function WebsiteCreation() {
-            let currentUrl = window.location.origin;
-            let redirectFile = "Articles/StartingDevelopmentOnThisWebsite.html";
-            window.location.href = redirectFile;
-            
-        }
-
-        function Summer2024() {
-            // First we will need to get the url of your webpage
-            let currentUrl = window.location.origin;
-            // Relative Path
-            let redirectFile = "Articles/2024SummerUpdate.html";
-
-            // And redirect. We will need to add / before the file path
-            window.location.href = redirectFile;
-            
-        }
-    </script>
-    <div class="NewsWrapper">
-
-
-
-        <div class="NewsBlock" onclick="Winter2025()">
-            <img src="Images/Ruins.png" alt="">
-            <h1>Winter 2025 Developer Update</h1>
-            <h3>3.15.2025</h3>
-            <p>GAME DEV</p>
-        </div> 
-    </div>
-    <div class="NewsWrapper">
-
-        <div class="NewsBlock" onclick="FirstYear()">
-            <img src="Images/FirstScreenshot.png" alt="">
-            <h1>Celebrating 1 Year of Game-Dev Progress</h1>
-            <h3>3.2.2025</h3>
-            <p>GAME DEV</p>
-        </div> 
-
-        <div class="NewsBlock" onclick="NewIntroMission()">
-            <img src="Images/PolarisBase.png" alt="">
-            <h1>Remaking the Intro mission</h1>
-            <h3>1.28.2025</h3>
-            <p>GAME DEV</p>
-        </div> 
-
-        <div class="NewsBlock" onclick="DevHelp()">
-            <img src="Images/Watchdog.jpg" alt="">
-            <h1>Getting Help with Development</h1>
-            <h3>1.12.2025</h3>
-            <p>GAME DEV</p>
-        </div> 
-
-
-  
-  
-            
-    </div>
-    <div class="NewsWrapper">
-
-        <div class="NewsBlock" onclick="Fall2024()">
-            <img src="Images/EarthOrbit_1440p.png" alt="">
-            <h1>Fall 2024 Developer Update</h1>
-            <h3>11.6.2024</h3>
-            <p>GAME DEV</p>
-        </div>
-
-        <div class="NewsBlock" onclick="WebsiteCreation()">
-            <img src="Images/HighresScreenshot00013.png" alt="">
-            <h1>Starting Development on this website</h1>
-            <h3>9.24.2024</h3>
-            <p>WEBSITE</p>
-        </div>  
-
-
-        <div class="NewsBlock" onclick="Summer2024()">
-            <img src="Images/HighresScreenshot00001.png" alt="">
-            <h1>Summer 2024 Developer Update</h1>
-            <h3>7.29.2024</h3>
-            <p>GAME DEV</p>
-        </div> 
-
-
-    </div>
-    <hr>
-
-
-
-
-
-
+    
     <section>
         <footer>
             <h5 id="FooterText">GAME IS STILL IN EARLY DEVELOPMENT | NOTHING IS FINAL | d.yyyy</h5>
