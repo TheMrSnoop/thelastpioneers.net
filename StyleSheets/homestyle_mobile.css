@@ -1,26 +1,31 @@
 @font-face {
   font-family: "Lexend";
-  src: url(Fonts/Lexend.ttf);
+  src: url(../Fonts/Lexend.ttf);
 }
 
 @font-face {
   font-family: "LexendThin";
-  src: url(Fonts/LexendThin.ttf);
+  src: url(../Fonts/LexendThin.ttf);
 }
 
 @font-face {
   font-family: "LexendBold";
-  src: url(Fonts/LexendBold.ttf);
+  src: url(../Fonts/LexendBold.ttf);
 }
 
 @font-face {
   font-family: "NASA-Font";
-  src: url(Fonts/NasaFont.otf);
+  src: url(../Fonts/NasaFont.otf);
 }
 
 @font-face {
     font-family: "Geo";
-    src: url(Fonts/Geo-Regular.ttf);
+    src: url(../Fonts/Geo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Boldonse";
+    src: url(../Fonts/Boldonse-Regular.ttf);
   }
 
 html, body
@@ -104,12 +109,14 @@ hr
 {
     text-align: center;
     font-size: 18px;
+    font-family: Boldonse, sans-serif;
 }
 
 .Mobile_Keypoint p
 {
     text-align: left;
-    padding-left: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 12px;
 }
 
@@ -192,10 +199,11 @@ hr
     justify-content: center;
 }
 
+
 .Mobile_GenreCard ul
 {
     list-style-type: none;
-    font-family: LexendThin;
+    font-family: Lexend;
     font-weight: 200;
     width: 50%;
 }
